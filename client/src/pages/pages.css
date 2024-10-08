@@ -1,0 +1,51 @@
+@supports ((-webkit-backdrop-filter: brightness(90%) blur(20px)) or (backdrop-filter: brightness(90%) blur(20px))) {
+
+    .set {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 76;
+        width: 100%;
+        background: transparent;
+        -webkit-backdrop-filter: brightness(90%) blur(20px);
+        backdrop-filter: brightness(90%) blur(20px);
+    }
+
+}
+
+
+.svg-set {
+    position: absolute;
+    z-index: 2;
+    right: -10px;
+    top: -10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Video Page                                 */
+/* -------------------------------------------------------------------------- */
+
+
+.grid-section {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 500px;
+    justify-content: center;
+
+}
+
+.video-size {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+    .grid-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
