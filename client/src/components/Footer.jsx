@@ -43,7 +43,7 @@ const Footer = (props) => {
                             <li>
                                 <small
                                     className="text-white">
-                                    <em>andreib3100@gmail.com</em>
+                                    <em>ursu-ioan@gmail.com</em>
                                 </small>
                             </li>
                         </ul>

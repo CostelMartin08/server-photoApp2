@@ -124,7 +124,7 @@ const MixPhoto = (props) => {
                                     to={`${routesBase.sedinteFoto}/${data[2].title ? data[2].title : routesBase.sedinteFoto}`}>
                                     <img
                                         className="full-width-imageMix"
-                                        src={`${imageBaseUrl}sedinte-foto/${data[2].title}/${data[2].content}`}
+                                        src={`${imageBaseUrl}fotografii-de-familie/${data[2].title}/${data[2].content}`}
                                         alt={`${data[2].title}`} />
                                     <span
                                         className={classNm}
@@ -134,7 +134,7 @@ const MixPhoto = (props) => {
                                 </Link>
                             </div>
                             <div className="col-lg-6 g-3 text-center">
-                                <h2 className="text-md-left card-font ">Ședințe Foto</h2>
+                                <h2 className="text-md-left card-font ">Foto Familie</h2>
                                 <p className="ms-md-2  text-md-left text-font-mix">
                                     Deoarece îmi place să încerc lucruri noi și să-mi pun spontaneitatea și creativitatea la treaba, surprind și diverse
                                     alte evenimente (majorate, petreceri private și nu numai), dar cochetez și cu fotografia de portret și cea culinară.
