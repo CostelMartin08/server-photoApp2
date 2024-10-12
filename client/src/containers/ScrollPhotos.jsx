@@ -67,7 +67,7 @@ const ScrollPhotos = ({ dataBrut, setSlideNumber, slideNumber, setOpenModal, par
 
                                     <div {...handlers}>
                                         <img
-                                            src={`https://balanandrei.ro/images/${param[2]}/${dataBrut.title}/${dataBrut.content[slideNumber]}`}
+                                            src={`https://ursu-ioan-fotograf.ro/images/${param[2]}/${dataBrut.title}/${dataBrut.content[slideNumber]}`}
                                             alt={`galery${dataBrut.content[slideNumber]}`}
                                         />
 

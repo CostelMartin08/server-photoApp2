@@ -46,7 +46,7 @@ export function deleteAnalyticsCookies() {
     if (trimmedName.startsWith('_ga') || trimmedName.startsWith('_ga_') || trimmedName.startsWith('_gid') || trimmedName.startsWith('_gat')) {
 
       document.cookie = `${trimmedName}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;`;
-      document.cookie = `${trimmedName}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=balanandrei.ro`;
+      document.cookie = `${trimmedName}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=ursu-ioan-fotograf.ro`;
     }
 
     ReactGA.ga('set', 'sendHitTask', null);

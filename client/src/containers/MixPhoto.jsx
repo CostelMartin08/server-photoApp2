@@ -7,7 +7,7 @@ import { routesBase } from "../scripts/routes";
 const MixPhoto = (props) => {
 
 
-    const imageBaseUrl = "https://balanandrei.ro/images/";
+    const imageBaseUrl = "https://ursu-ioan-fotograf.ro/images/";
     const classNm = 'position-absolute text-light end-0 bottom-0 card-font me-4 mb-3 h5';
     const theme = props.theme.mod;
     const [data, setdata] = useState([]);

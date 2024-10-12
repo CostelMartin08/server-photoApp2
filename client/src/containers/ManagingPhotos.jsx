@@ -78,7 +78,7 @@ const PhotoSet = ({ loading, setLoading, dataBrut, param, setSlideNumber, setOpe
                     <div className="banner position-relative">
                         <div
                             className="bg-albumdetails"
-                            style={{ backgroundImage: `url(https://balanandrei.ro/images/${existingURL})` }}>
+                            style={{ backgroundImage: `url(https://ursu-ioan-fotograf.ro/images/${existingURL})` }}>
                         </div>
                         <div className='bg-content'>
                             <h3
@@ -119,7 +119,7 @@ const PhotoSet = ({ loading, setLoading, dataBrut, param, setSlideNumber, setOpe
                                             <img
                                                 onClick={() => handleOpenModal(indexu)}
                                                 className="photo-grid "
-                                                src={`https://balanandrei.ro/images/${param[2]}/${dataBrut.title}/${slide}`}
+                                                src={`https://ursu-ioan-fotograf.ro/images/${param[2]}/${dataBrut.title}/${slide}`}
                                                 alt={`poza${indexu}`}
                                             />
 

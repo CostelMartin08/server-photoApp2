@@ -113,7 +113,7 @@ const PhotoEvents = ({ loadingData, sendData, status }) => {
 
                     <img
                       className="full-width-image"
-                      src={`https://balanandrei.ro/images/${category}/${album.title}/${album.content}`}
+                      src={`https://ursu-ioan-fotograf.ro/images/${category}/${album.title}/${album.content}`}
                       alt={`galerie-foto${index}`}
                     />
                     <span
