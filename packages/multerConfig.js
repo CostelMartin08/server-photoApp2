@@ -11,19 +11,19 @@ const storage = multer.diskStorage({
 
     switch (category) {
       case 'nunti':
-        destinationPath = path.join(destinationPath, "Nunti", text);
+        destinationPath = path.join(destinationPath, "nunti", text);
         break;
       case 'portrete':
-        destinationPath = path.join(destinationPath, "Portrete", text);
+        destinationPath = path.join(destinationPath, "portrete", text);
         break;
       case 'fotografii-de-familie':
-        destinationPath = path.join(destinationPath, "FotoFamilie", text);
+        destinationPath = path.join(destinationPath, "fotografii-de-familie", text);
         break;
       case 'sedinte-foto':
-        destinationPath = path.join(destinationPath, "SedinteFoto", text);
+        destinationPath = path.join(destinationPath, "sedinte-foto", text);
         break;
       case 'save-the-date':
-        destinationPath = path.join(destinationPath, "SavetheDate", text);
+        destinationPath = path.join(destinationPath, "save-the-date", text);
         break;
     }
 
