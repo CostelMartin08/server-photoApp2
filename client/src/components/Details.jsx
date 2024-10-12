@@ -25,7 +25,7 @@ const Details = (props) => {
                     </div>
                     <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
                         <picture id="picture">
-                            <img className='photo my-4' src="/uploads/myPhoto.webp" alt="foto Ursu Ioan" />
+                            <img className='photo my-4' src="/uploads/me.webp" alt="foto Ursu Ioan" />
                         </picture>
                     </div>
                 </div>
