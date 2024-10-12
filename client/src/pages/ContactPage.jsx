@@ -199,21 +199,21 @@ const ContactPage = () => {
                                 </a>
 
                                 <a className={`${theme.mod.contrastText} text-decoration-none d-inline-flex `}
-                                    href="https://www.instagram.com/andrei.vdr/">
+                                    href="https://www.instagram.com/ursuioan_fotograf.ro/">
                                     <i className={`p-4 fa-brands fa-instagram fa-2xl ${theme.mod.contrastText}`}></i>
 
                                     <span className="font-italic my-auto">ursu ioan</span>
                                 </a>
 
                                 <a className={`${theme.mod.contrastText} text-decoration-none d-inline-flex `}
-                                    href="https://www.facebook.com/profile.php?id=100065019240579">
+                                    href="#">
                                     <i className={`p-4 fa-brands fa-facebook fa-2xl ${theme.mod.contrastText}`}></i>
 
                                     <span className="font-italic my-auto">Ursu Ioan</span>
                                 </a>
 
                                 <a className={`${theme.mod.contrastText} text-decoration-none d-inline-flex `}
-                                    href="https://www.youtube.com/@andrei_balan">
+                                    href="#">
                                     <i className={`p-4 fa-brands fa-youtube fa-2xl ${theme.mod.contrastText}`}></i>
 
                                     <span className="font-italic my-auto">Ursu Ioan</span>

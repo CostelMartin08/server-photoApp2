@@ -53,7 +53,7 @@ const Footer = (props) => {
                             <li>
                                 <a
                                     aria-label="instagram"
-                                    href="https://www.instagram.com/andrei.vdr/"
+                                    href="https://www.instagram.com/ursuioan_fotograf.ro/"
                                     type="button"
                                     className="btn text-light">
                                     <i
@@ -62,7 +62,7 @@ const Footer = (props) => {
                                 </a>
                                 <a
                                     aria-label="facebook"
-                                    href="https://www.facebook.com/profile.php?id=100065019240579"
+                                    href="#"
                                     type="button"
                                     className="btn text-light">
                                     <i
@@ -71,7 +71,7 @@ const Footer = (props) => {
                                 </a>
                                 <a
                                     aria-label="youtube"
-                                    href="https://www.youtube.com/@andrei_balan"
+                                    href="#"
                                     type="button"
                                     className="btn text-light">
                                     <i

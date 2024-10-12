@@ -8,7 +8,7 @@ import './header.css';
 
 const style = {
     imgW: {
-        width: '80px',
+        width: '95px',
     }
 }
 
@@ -107,7 +107,7 @@ const Header = (props) => {
                                     className={`nav-link px-3 dropdown  dropdown-toggle ${param[1] === "portofoliuFoto" ? theme.border : " "}`} data-bs-toggle="dropdown" aria-expanded="true"
                                 >Portofoliu Foto
                                 </Link>
-                                <ul className={`${theme.bg} bg-dropdown px-3 dropdown-menu mt-lg-4 `}>
+                                <ul className={`${theme.bg} custom-ul bg-dropdown px-4 dropdown-menu mt-lg-4 `}>
                                     <li>
                                         <Link
                                             to={routesBase.portofoliuFotoNunti}
@@ -153,7 +153,7 @@ const Header = (props) => {
                             <li className="nav-item mx-auto ">
                                 <Link
                                     to={routesBase.servicii}
-                                    className={`nav-link  ${param[1] === "contact" ? theme.border : " "}`} aria-expanded="false"
+                                    className={`nav-link  ${param[1] === "servicii" ? theme.border : " "}`} aria-expanded="false"
                                 >Servicii
                                 </Link>
                             </li>

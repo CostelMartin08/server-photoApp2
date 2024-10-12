@@ -10,6 +10,7 @@ import PhotoEvents from './pages/PhotoEventsPage';
 import AlbumDetails from "./pages/AlbumDetailsPage";
 import ControlPanel from './pages/ControlPanelPage';
 import AboutPage from "./pages/AboutPage";
+import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
 import PageNotFound from "./pages/NotFoundPage";
 
@@ -55,7 +56,7 @@ const App = () => {
 
   const getData = async (parametruURL) => {
     try {
-     
+
       const response = await fetch(`${urlBase}/galerie/${parametruURL}`, {
         method: 'GET',
         credentials: 'include',
@@ -74,8 +75,8 @@ const App = () => {
 
     <ThemeProvider>
       <Router>
-       <RouteChangeTracker />
-        <Routes> 
+        <RouteChangeTracker />
+        <Routes>
           <Route path='/login' element={<Login connection={login} />} />
           <Route path='/register' element={<Register />} />
           <Route path='/' element={<HomePage disconnection={logout} status={connection} loadingData={getData} sendData={data} />} />
@@ -83,6 +84,7 @@ const App = () => {
           <Route path='/controlPanel' element={connection ? (<ControlPanel status={connection} disconnection={logout} />) : (<PageNotFound />)} />
           <Route path='portofoliuFoto/:category' element={<PhotoEvents loadingData={getData} sendData={data} status={connection} logout={logout} />} />
           <Route path='/despreMine' element={<AboutPage />} />
+          <Route path='/servicii' element={<ServicesPage />} />
           <Route path='/contact' element={<ContactPage />} />
           <Route path='*' element={<PageNotFound />} />
           <Route path='/notFound' element={<PageNotFound />} />

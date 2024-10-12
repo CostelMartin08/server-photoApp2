@@ -68,10 +68,10 @@ const AddNewPhoto = ({ data, refresh, theme }) => {
                     encType="multipart/form-data"
                     onSubmit={handleSubmit}>
 
-                    <div className='input-div'>
+                    <div className='input-div cursor-pointer'>
 
                         <input
-                            className='input'
+                            className='input cursor-pointer'
                             type='file'
                             name="file"
                             onChange={handleFileChange}
