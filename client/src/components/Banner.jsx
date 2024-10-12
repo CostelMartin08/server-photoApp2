@@ -4,7 +4,7 @@ import Nunti from './photo/special-nunta.webp';
 import Portrete from './photo/special-portrete.webp';
 import Familie from './photo/special-familie.webp';
 import Sedinta from './photo/special-sedinta.webp';
-import SavetheDate from './photo/special-special-save-the-date.webp';
+import SavetheDate from './photo/special-save-the-date.webp';
 
 import { useLocation } from "react-router-dom";
 
