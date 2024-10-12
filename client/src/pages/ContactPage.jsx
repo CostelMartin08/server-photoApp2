@@ -184,7 +184,7 @@ const ContactPage = () => {
                                     href="tel:+40742490856">
                                     <i className={`p-4 fa-solid fa-phone fa-2xl ${theme.mod.contrastText}`}></i>
 
-                                    <span className="font-italic my-auto">+40742490856</span>
+                                    <span className="font-italic my-auto">+40742490556</span>
 
                                 </a>
 
@@ -194,7 +194,7 @@ const ContactPage = () => {
                                     <i className={`p-4 fa-solid fa-envelope fa-2xl ${theme.mod.contrastText}`}></i>
 
 
-                                    <span className="font-italic my-auto">andreib3100@gmail.com</span>
+                                    <span className="font-italic my-auto">ursuioan@gmail.com</span>
 
                                 </a>
 
@@ -202,21 +202,21 @@ const ContactPage = () => {
                                     href="https://www.instagram.com/andrei.vdr/">
                                     <i className={`p-4 fa-brands fa-instagram fa-2xl ${theme.mod.contrastText}`}></i>
 
-                                    <span className="font-italic my-auto">andrei.vdr</span>
+                                    <span className="font-italic my-auto">ursu ioan</span>
                                 </a>
 
                                 <a className={`${theme.mod.contrastText} text-decoration-none d-inline-flex `}
                                     href="https://www.facebook.com/profile.php?id=100065019240579">
                                     <i className={`p-4 fa-brands fa-facebook fa-2xl ${theme.mod.contrastText}`}></i>
 
-                                    <span className="font-italic my-auto">Andrei Balan</span>
+                                    <span className="font-italic my-auto">Ursu Ioan</span>
                                 </a>
 
                                 <a className={`${theme.mod.contrastText} text-decoration-none d-inline-flex `}
                                     href="https://www.youtube.com/@andrei_balan">
                                     <i className={`p-4 fa-brands fa-youtube fa-2xl ${theme.mod.contrastText}`}></i>
 
-                                    <span className="font-italic my-auto">Andrei Balan</span>
+                                    <span className="font-italic my-auto">Ursu Ioan</span>
                                 </a>
 
 

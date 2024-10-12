@@ -8,7 +8,7 @@ const storage = multer.diskStorage({
     const text = req.body.text;
 
     let destinationPath = "./public/uploads";
-
+    
     switch (category) {
       case 'nunti':
         destinationPath = path.join(destinationPath, "nunti", text);

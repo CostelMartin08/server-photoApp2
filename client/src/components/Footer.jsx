@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./photo/logo-bg.png";
+import logo from "./photo/logo-ursu.png";
 import { Link } from 'react-router-dom';
 import './details.css'
 import { routesBase } from "../scripts/routes";
@@ -28,7 +28,7 @@ const Footer = (props) => {
 
                         <span
                             className="text-font text-light ms-md-1"
-                        >Fotograf Andrei Balan
+                        >Fotograf Ursu Ioan
                         </span>
 
                     </Link>

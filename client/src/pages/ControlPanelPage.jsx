@@ -33,7 +33,7 @@ const ControlPanel = (props) => {
         formData.append("favorite", favorite);
 
         switch (select) {
-            case "Nunti":
+            case "nunti":
                 for (let i = 0; i < file.length; i++) {
                     formData.append(`nunti`, file[i]);
                 }

@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { urlBase } from "../scripts/url";
-import logo from "../components/photo/logo-bg.png";
+import logo from "../components/photo/logo-ursu.png";
 import { routesBase } from "../scripts/routes";
 
 

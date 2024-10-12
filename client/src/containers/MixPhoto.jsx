@@ -65,7 +65,7 @@ const MixPhoto = (props) => {
                                     to={`${routesBase.portofoliuFotoNunti}/${data[0].title ? data[0].title : routesBase.portofoliuFotoNunti}`}>
                                     <img
                                         className="full-width-imageMix"
-                                        src={`${imageBaseUrl}Nunti/${data[0].title}/${data[0].content}`}
+                                        src={`${imageBaseUrl}nunti/${data[0].title}/${data[0].content}`}
                                         alt={`${data[0].title}`} />
                                     <span
                                         className={classNm}
@@ -91,10 +91,10 @@ const MixPhoto = (props) => {
                                 <Link
                                     className="cardMix shadow "
 
-                                    to={`${routesBase.portofoliuFotoBotezuri}/${data[1].title ? data[1].title : routesBase.portofoliuFotoBotezuri}`}>
+                                    to={`${routesBase.portofoliuFotoPortrete}/${data[1].title ? data[1].title : routesBase.portofoliuFotoPortrete}`}>
                                     <img
                                         className="full-width-imageMix"
-                                        src={`${imageBaseUrl}Botezuri/${data[1].title}/${data[1].content}`}
+                                        src={`${imageBaseUrl}portrete/${data[1].title}/${data[1].content}`}
                                         alt={`${data[1].title}`} />
                                     <span
                                         className={classNm}
@@ -105,7 +105,7 @@ const MixPhoto = (props) => {
                             </div>
 
                             <div className="col-lg-6 g-3 text-center">
-                                <h2 className="text-md-left card-font ">Fotografie de Botez</h2>
+                                <h2 className="text-md-left card-font ">Fotografie Portret</h2>
                                 <p className="ms-md-2  text-md-left text-font-mix">
                                     Fiecare fotografie este o poveste în sine, în care emoțiile și fericirea din ziua botezului sunt imortalizate în imagini de o
                                     frumusețe uluitoare. De la priviri încântate la gesturi tandre și zâmbete nevinovate, aceste cadre prețioase surprind esența pură
@@ -121,10 +121,10 @@ const MixPhoto = (props) => {
                                 <Link
                                     className="cardMix shadow"
 
-                                    to={`${routesBase.portofoliuFotoDiverse}/${data[2].title ? data[2].title : routesBase.portofoliuFotoDiverse}`}>
+                                    to={`${routesBase.sedinteFoto}/${data[2].title ? data[2].title : routesBase.sedinteFoto}`}>
                                     <img
                                         className="full-width-imageMix"
-                                        src={`${imageBaseUrl}Diverse/${data[2].title}/${data[2].content}`}
+                                        src={`${imageBaseUrl}sedinte-foto/${data[2].title}/${data[2].content}`}
                                         alt={`${data[2].title}`} />
                                     <span
                                         className={classNm}
@@ -134,7 +134,7 @@ const MixPhoto = (props) => {
                                 </Link>
                             </div>
                             <div className="col-lg-6 g-3 text-center">
-                                <h2 className="text-md-left card-font ">Diverse</h2>
+                                <h2 className="text-md-left card-font ">Ședințe Foto</h2>
                                 <p className="ms-md-2  text-md-left text-font-mix">
                                     Deoarece îmi place să încerc lucruri noi și să-mi pun spontaneitatea și creativitatea la treaba, surprind și diverse
                                     alte evenimente (majorate, petreceri private și nu numai), dar cochetez și cu fotografia de portret și cea culinară.

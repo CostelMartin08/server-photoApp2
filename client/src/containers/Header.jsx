@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { Link, useLocation  } from 'react-router-dom';
 import { urlBase } from "../scripts/url";
-import logoBG from '../components/photo/logo-bg.png';
+import logoBG from '../components/photo/logo-ursu.png';
 import { routesBase } from "../scripts/routes";
 import SwitchButton from "../components/SwitchButton";
 import './header.css';
@@ -74,7 +74,7 @@ const Header = (props) => {
                             style={style.imgW}
                             className="img-fluid"
                             src={logoBG}
-                            alt="logo-Balan-Andrei">
+                            alt="logo-Ursu-Ioan">
                         </img>
                         <span
                             className="text-font text-light ms-md-1"
