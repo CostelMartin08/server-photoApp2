@@ -34,35 +34,30 @@ const CaruselMobile = (props) => {
 
             <SwiperSlide>
                 <picture className="swiper-zoom-container">
-                    <img className="carusel-img img-fluid" src="/uploads/carusel--2.webp" alt="foto-nunta-natura" />
+                    <img className="carusel-img img-fluid" src="/uploads/alt1.webp" alt="foto-nunta-natura" />
                 </picture>
 
             </SwiperSlide>
             <SwiperSlide>
 
                 <picture className="swiper-zoom-container">
-                    <img className="carusel-img img-fluid" src="/uploads/carusel--7.webp" alt="foto-biserica" />
+                    <img className="carusel-img img-fluid" src="/uploads/alt2.webp" alt="foto-biserica" />
                 </picture>
             </SwiperSlide>
             <SwiperSlide>
 
                 <picture className="swiper-zoom-container">
-                    <img className="carusel-img img-fluid" src="/uploads/carusel_2a.webp" alt="foto-biserica" />
+                    <img className="carusel-img img-fluid" src="/uploads/alt3.webp" alt="foto-biserica" />
                 </picture>
             </SwiperSlide>
             <SwiperSlide>
 
                 <picture className="swiper-zoom-container">
-                    <img className="carusel-img img-fluid" src="/uploads/carusel_3b.webp" alt="foto-mireasa" />
+                    <img className="carusel-img img-fluid" src="/uploads/alt4.webp" alt="foto-mireasa" />
                 </picture>
 
             </SwiperSlide>
-            <SwiperSlide>
-                <picture className="swiper-zoom-container">
-                    <img className="carusel-img img-fluid" src="/uploads/majorat.webp" alt="foto-majorat" />
-                </picture>
-            </SwiperSlide>
-
+           
         </Swiper>
 
     );
