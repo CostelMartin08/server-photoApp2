@@ -1,7 +1,11 @@
 import React from "react";
-import Nunti from './photo/nuntadoi.webp';
-import Botezuri from './photo/botez.webp';
-import Diverse from './photo/lapunte.webp'
+
+import Nunti from './photo/special-nunta.webp';
+import Portrete from './photo/special-portrete.webp';
+import Familie from './photo/special-familie.webp';
+import Sedinta from './photo/special-sedinta.webp';
+import SavetheDate from './photo/special-special-save-the-date.webp';
+
 import { useLocation } from "react-router-dom";
 
 const Banner = () => {
@@ -19,22 +23,22 @@ const Banner = () => {
     classN="banner-bg";
   }
   else if (photo === 'portrete') {
-    backgroundImage = Botezuri;
+    backgroundImage = Portrete;
     titleText = 'Portrete';
     classN="banner-bg--botezuri";
   }
   else if (photo === 'fotografii-de-familie') {
-    backgroundImage = Diverse;
+    backgroundImage = Familie;
     titleText = 'Fotografii de Familie';
     classN="banner-bg-diverse";
   }
   else if (photo === 'sedinte-foto') {
-    backgroundImage = Diverse;
+    backgroundImage = Sedinta;
     titleText = 'Ședințe Foto';
     classN="banner-bg-diverse";
   }
   else if (photo === 'save-the-date') {
-    backgroundImage = Diverse;
+    backgroundImage = SavetheDate;
     titleText = 'Save the Date';
     classN="banner-bg-diverse";
   }
