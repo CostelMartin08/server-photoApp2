@@ -34,9 +34,9 @@ const Carusel = (props) => {
             <SwiperSlide>
 
                 <picture className='swiper-zoom-container'>
-               {/*     <source srcSet="/uploads/carusel--1.webp" media="(max-width: 700px)" />
+                    {/*     <source srcSet="/uploads/carusel--1.webp" media="(max-width: 700px)" />
                     <source srcSet="/uploads/carusel--1lg.webp" media="(min-width: 1000px)" />*/}
-                    <img loading="lazy" className="carusel-img img-fluid" src="/uploads/familie2.webp" alt="miri-pe-alee" />
+                    <img loading="lazy" className="carusel-img img-fluid" src="/uploads/familie.webp" alt="familie" />
                 </picture>
 
 
@@ -46,7 +46,7 @@ const Carusel = (props) => {
                 <picture className="swiper-zoom-container" >
                     {/*<source srcSet="/uploads/carusel--3.webp" media="(max-width: 700px)" />
                     <source srcSet="/uploads/carusel--3lg.webp" media="(min-width: 1000px)" />*/}
-                    <img loading="lazy" className="carusel-img img-fluid" src="/uploads/nunta2.webp" alt="dansul-mirilor" />
+                    <img loading="lazy" className="carusel-img img-fluid" src="/uploads/portret.webp" alt="dansul-mirilor" />
                 </picture>
 
             </SwiperSlide>
@@ -55,7 +55,7 @@ const Carusel = (props) => {
                 <picture className="swiper-zoom-container" >
                     {/*<source srcSet="/uploads/carusel--4.webp" media="(max-width: 700px)" />
                     <source srcSet="/uploads/carusel--4lg.webp" media="(min-width: 1000px)" />*/}
-                    <img loading="lazy" className="carusel-img img-fluid" src="/uploads/special-familie.jpg" alt="mirii-in-biserica" />
+                    <img loading="lazy" className="carusel-img img-fluid" src="/uploads/sedinte-foto.webp" alt="mirii-in-biserica" />
                 </picture>
 
             </SwiperSlide>

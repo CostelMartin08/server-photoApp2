@@ -1,10 +1,12 @@
 import React from "react";
 
 import Nunti from './photo/special-nunta.webp';
-import Portrete from './photo/special-portrete.webp';
-import Familie from './photo/special-familie.webp';
-import Sedinta from './photo/special-sedinta.webp';
 import SavetheDate from './photo/special-save-the-date.webp';
+
+import Portrete from './photo/portret.webp';
+import Familie from './photo/familie.webp';
+import Sedinta from './photo/sedintefoto2.webp';
+
 
 import { useLocation } from "react-router-dom";
 

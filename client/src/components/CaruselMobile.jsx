@@ -34,30 +34,44 @@ const CaruselMobile = (props) => {
 
             <SwiperSlide>
                 <picture className="swiper-zoom-container">
-                    <img className="carusel-img img-fluid" src="/uploads/alt1.webp" alt="foto-nunta-natura" />
+                    <img className="carusel-img img-fluid" src="/uploads/mobile-carousel1.webp" alt="foto fata cu rata" />
                 </picture>
 
             </SwiperSlide>
             <SwiperSlide>
 
                 <picture className="swiper-zoom-container">
-                    <img className="carusel-img img-fluid" src="/uploads/alt2.webp" alt="foto-biserica" />
+                    <img className="carusel-img img-fluid" src="/uploads/mobile-carousel2.webp" alt="foto fata care bea cafea" />
                 </picture>
             </SwiperSlide>
             <SwiperSlide>
 
                 <picture className="swiper-zoom-container">
-                    <img className="carusel-img img-fluid" src="/uploads/alt3.webp" alt="foto-biserica" />
+                    <img className="carusel-img img-fluid" src="/uploads/mobile-carousel3.webp" alt="foto mireasa" />
                 </picture>
             </SwiperSlide>
             <SwiperSlide>
 
                 <picture className="swiper-zoom-container">
-                    <img className="carusel-img img-fluid" src="/uploads/alt4.webp" alt="foto-mireasa" />
+                    <img className="carusel-img img-fluid" src="/uploads/mobile-carousel4.webp" alt="foto familie" />
                 </picture>
 
             </SwiperSlide>
-           
+            <SwiperSlide>
+
+                <picture className="swiper-zoom-container">
+                    <img className="carusel-img img-fluid" src="/uploads/mobile-carousel5.webp" alt="foto cuplu" />
+                </picture>
+
+            </SwiperSlide>
+            <SwiperSlide>
+
+                <picture className="swiper-zoom-container">
+                    <img className="carusel-img img-fluid" src="/uploads/mobile-carousel6.webp" alt="foto copil" />
+                </picture>
+
+            </SwiperSlide>
+
         </Swiper>
 
     );

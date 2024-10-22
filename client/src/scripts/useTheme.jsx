@@ -37,7 +37,7 @@ export function ThemeProvider({ children }) {
             bgB: 'bg-day',
             bgHeader: 'bgDay-header',
             creator: 'text-font-creator-light',
-            sVg: '#3A6351',
+            sVg: '#4E7132',
             sVg2: '#282A29'
 
         },
@@ -50,7 +50,7 @@ export function ThemeProvider({ children }) {
             bgB: 'bg-night',
             bgHeader: 'bgDark-header',
             creator: 'text-font-creator-dark',
-            sVg:'#562B08',
+            sVg:'#0B192C',
             sVg2: '#ffffff'
 
         },
