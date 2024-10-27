@@ -77,9 +77,16 @@ const MixPhoto = (props) => {
                             <div className="col-lg-6 g-3 text-center">
                                 <h2 className="text-md-left card-font ">Fotografie de Nuntă</h2>
                                 <p className="text-font-mix text-md-left">
-                                    Nunta este făra dar și poate unul din cele mai importante evenimente din viața de cuplu. Însăși însemnătatea și încărcătura emoțională
-                                    din jurul acestei zile cer ca  fotograful să fie atent la detalii, dinamic și cu experiența. Îmi dau interesul și încerc să pun suflet
-                                    în ceea ce fac, pentru ca povestea nunții voastre să fie spusă cât mai frumos și sincer.
+
+                                    O nuntă marchează un moment unic și profund în viața unui cuplu,
+                                    o zi plină de emoții și momente de neuitat. Pentru a surprinde
+                                    autenticitatea fiecărui zâmbet și fiecărui gest, este necesar
+                                    ca fotograful să înțeleagă importanța fiecărui detaliu și să
+                                    lucreze cu pasiune. Îmi dedic toată atenția și energia pentru ca
+                                    fiecare cadru să reflecte frumusețea și naturalețea zilei voastre
+                                    speciale, creând imagini care vor spune, peste ani, povestea voastră
+                                    exact așa cum a fost trăită.
+
                                 </p>
                             </div>
                         </div>
@@ -107,9 +114,13 @@ const MixPhoto = (props) => {
                             <div className="col-lg-6 g-3 text-center">
                                 <h2 className="text-md-left card-font ">Fotografie Portret</h2>
                                 <p className="text-md-left text-font-mix">
-                                    Fiecare fotografie este o poveste în sine, în care emoțiile și fericirea din ziua botezului sunt imortalizate în imagini de o
-                                    frumusețe uluitoare. De la priviri încântate la gesturi tandre și zâmbete nevinovate, aceste cadre prețioase surprind esența pură
-                                    a acestui eveniment religios și familial.
+                                    Fotografia de portret este o artă care capturează nu doar trăsăturile fizice,
+                                    ci și esența și personalitatea subiectului. Scopul meu este să creez imagini
+                                    care să transmită autenticitate, emoție și profunzime, surprinzând fiecare
+                                    expresie și detaliu care fac persoana unică. Fiecare ședință foto este o
+                                    colaborare, o experiență confortabilă și naturală, în care mă asigur că
+                                    atmosfera permite fiecărui portret să devină o reflecție sinceră și
+                                    expresivă a persoanei din fața camerei.
                                 </p>
                             </div>
 
@@ -136,13 +147,15 @@ const MixPhoto = (props) => {
                             <div className="col-lg-6 g-3 text-center">
                                 <h2 className="text-md-left card-font ">Foto Familie</h2>
                                 <p className="text-md-left text-font-mix">
-                                    Deoarece îmi place să încerc lucruri noi și să-mi pun spontaneitatea și creativitatea la treaba, surprind și diverse
-                                    alte evenimente (majorate, petreceri private și nu numai), dar cochetez și cu fotografia de portret și cea culinară.
+                                    Fotografia de familie înglobează esența legăturilor voastre,
+                                    capturând momentele pline de bucurie și dragoste. Fiecare imagine
+                                    spune o poveste despre râs și conexiune, transformând clipele
+                                    trecătoare în amintiri de neuitat.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div> : null}
 
             <div className="container d-flex justify-content-end text-center mt-3 ">

@@ -15,12 +15,8 @@ const Details = (props) => {
                             <h2 className='mt-2 title-font text-light'>Despre mine</h2>
                             <hr className={`${theme.bg} pt-1 mx-1`}></hr>
                             <p className='text-font text-light'>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Curabitur porta risus quis felis ullamcorper posuere.
-                                Maecenas sit amet tempus est. Phasellus non accumsan turpis,
-                                ac sagittis nisi. Nullam lacus nisl, dapibus vel sodales ac,
-                                imperdiet quis risus. Integer nec est orci. Maecenas bibendum
-                                pretium arcu et congue. Sed non tortor leo.
+                                Una dintre cele mai mari pasiuni ale mele este fototgrafia. Această pasiune “s-a născut” oarecum din dorința de a reda simplului valoarea și frumusețea lui, de a-l readuce la viață prin fotografie; de a captura momentele unice, cu încărcătură emoțională pentru clienții mei.
+                                Cred ca amintirile se păstrează vii și cel mai frumos in fotografii; de aceea, am ales acest drum și mi-am dezvoltat această pasiune.
                             </p>
                         </div>
                     </div>

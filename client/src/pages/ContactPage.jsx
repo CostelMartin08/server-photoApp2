@@ -93,8 +93,15 @@ const ContactPage = () => {
                                 </h3>
                             </div>
                             <div className="ms-2 text-left fs-5">
-                                <p className={`text-font-contact ${theme.mod.contrastText}`}>Ai mai jos datele mele de contact. Mă poți contacta atât telefonic cât și printr-un e-mail sau mesaj pe Instagram.
-                                    De asemenea formularul de mai jos îți stă la dispoziție.</p>
+                                <p className={`text-font-contact ${theme.mod.contrastText}`}>
+
+                                    Sunt bucuros să răspund tuturor întrebărilor tale! Indiferent dacă dorești să afli mai multe detalii
+                                    despre pachetele noastre, să soliciți o ofertă personalizată sau să programezi o întâlnire, sunt aici
+                                    pentru a te ajuta.
+                                    Pentru a lua legătura cu mine, completează formularul de mai jos sau contactează-mă direct folosind
+                                    informațiile de contact.
+
+                                </p>
                             </div>
                         </div>
 
@@ -102,13 +109,13 @@ const ContactPage = () => {
 
                             <div className="col-lg-3 p-0 pt-4 lg:pt-0 relative text-center">
 
-            
-                                <picture className="dark-mode"> 
+
+                                <picture className="dark-mode">
                                     <source media="(min-width: 992px)" srcSet={LargePhoto} />
                                     <source media="(max-width: 991px)" srcSet={SmallPhoto} />
                                     <img className="photo-photo" src={SmallPhoto} alt="img" />
                                 </picture>
-                                <picture className="white-mod"> 
+                                <picture className="white-mod">
                                     <source media="(min-width: 992px)" srcSet={LargePhotoW} />
                                     <source media="(max-width: 991px)" srcSet={SmallPhotoW} />
                                     <img className="photo-photo" src={SmallPhoto} alt="img" />

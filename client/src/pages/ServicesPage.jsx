@@ -33,18 +33,18 @@ const Services = () => {
 
                         </h3>
                         <div className="mb-4 text-left fs-5">
-                            <p className={`text-font-contact ${theme.mod.contrastText}`}>Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Vestibulum eu scelerisque purus. Fusce nisi nisl,
-                                finibus sit amet lectus quis, consectetur porttitor mauris. Donec gravida.</p>
+                            <p className={`text-font-contact ${theme.mod.contrastText}`}>
+                                Ofer servicii complete de fotografie pentru evenimente importante
+                                din viața ta, surprinzând momentele cele mai valoroase într-un stil
+                                unic și profesional. Fie că este vorba de o nuntă, un botez sau alte
+                                ocazii speciale, sunt aici pentru a crea amintiri memorabile.</p>
                         </div>
 
                         <div className='row g-3 md:g-0'>
                             <div className='col-12 col-lg-6 text-center card-mod'>
                                 <section className='card-services'>
                                     <p className='title-mod'>PACHET PRINCIPAL</p>
-                                    <span>€ 1500</span>
-                                    <p>Fotograf principal și fotograf secundar</p>
-                                    <p>Maxim 12 ore de acoperire a evenimentului</p>
+                                    <span>€ 800</span>
                                     <p>Pregătirea mirilor</p>
                                     <p>Ceremonie religioasă/umanistă</p>
                                     <p>Ședința foto cu mirii și invitații</p>
@@ -61,15 +61,18 @@ const Services = () => {
 
                         </div>
                         <div className="mt-4 text-left fs-5">
-                            <p className={`text-font-contact ${theme.mod.contrastText}`}>Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Vestibulum eu scelerisque purus. Fusce nisi nisl,
-                                finibus sit amet lectus quis, consectetur porttitor mauris. Donec gravida.</p>
+                            <p className={`text-font-contact ${theme.mod.contrastText}`}>
+                                Personalizează pachetul în funcție de nevoile tale cu opțiunile suplimentare de mai jos.
+                                Alege să adaugi momente speciale precum fotografii la Starea Civilă,
+                                o ședință „Save the Date” sau un album premium.
+                            </p>
                             <h5 className='md-lp'>Opțiuni</h5>
 
                             <ul className={`text-font-contact  ul-set ${theme.mod.contrastText}`}>
+                                <li>Servicii video + 600€</li>
                                 <li>Fotografii la Starea Civilă + 150€</li>
                                 <li>Fotografii Ceremonie Botez + 150€</li>
-                                <li>Ședință foto "Save the Date" 300€</li>
+                                <li>Ședință foto "Save the Date" + 250€</li>
                                 <li>Album foto premium 20x25 cm, 15 file + 300€</li>
                             </ul>
                         </div>

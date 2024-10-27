@@ -28,7 +28,7 @@ const Footer = (props) => {
                             width={"280px"}>
                         </img>
 
-                    {/*    <span
+                        {/*    <span
                             className="text-font text-light ms-md-1"
                         >Fotograf Ursu Ioan
                         </span>
@@ -39,13 +39,13 @@ const Footer = (props) => {
                             <li>
                                 <small
                                     className="text-white"
-                                >+40742490856
+                                ><a className="text-white" href="tel:+44 7448 525250">+44 7448 525250</a>
                                 </small>
                             </li>
                             <li>
                                 <small
                                     className="text-white">
-                                    <em>ursu-ioan@gmail.com</em>
+                                    <a className="text-white" href="mailto:ursuioan33@yahoo.com">ursuioan33@yahoo.com</a>
                                 </small>
                             </li>
                         </ul>
@@ -57,39 +57,33 @@ const Footer = (props) => {
                                     aria-label="instagram"
                                     href="https://www.instagram.com/ursuioan_fotograf.ro/"
                                     type="button"
-                                    className="btn text-light">
+                                    target="_blank"
+                                    className="btn text-light zxcv">
                                     <i
                                         className="fa-brands fa-instagram fa-xl">
                                     </i>
                                 </a>
+
                                 <a
-                                    aria-label="facebook"
-                                    href="#"
-                                    type="button"
-                                    className="btn text-light">
-                                    <i
-                                        className="fa-brands fa-facebook fa-xl">
-                                    </i>
+                                    className="text-white btn text-light zxcv"
+                                    aria-label="Chat on WhatsApp"
+                                    href="https://wa.me/447448525250"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fa-brands fa-whatsapp fa-xl"></i>
                                 </a>
-                                <a
-                                    aria-label="youtube"
-                                    href="#"
-                                    type="button"
-                                    className="btn text-light">
-                                    <i
-                                        className="fa-brands fa-youtube fa-xl">
-                                    </i>
-                                </a>
+
+
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div className={`${theme.creator} mt-3 py-3`}>
+            {/*  <div className={`${theme.creator} mt-3 py-3`}>
                 <div className="container d-flex justify-content-center justify-content-md-start">
                     <p className="m-0 ">Realizat de <a className="text-success" href='https://www.instagram.com/costelmartinescu/'>Costel Martinescu</a></p>
                 </div>
-            </div>
+            </div>*/}
         </footer>
     );
 }
