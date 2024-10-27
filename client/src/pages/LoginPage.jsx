@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { urlBase } from "../scripts/url";
-import logo from "../components/photo/logo-ursu.png";
+import logo from "../components/photo/logoUrsuFooter.webp";
 import { routesBase } from "../scripts/routes";
 
 
@@ -53,11 +53,10 @@ const Login = (props) => {
       <main className="form-signin justify-content-center row pt-5 mx-auto">
         <form className="col-9 col-md-4 p-lg-5">
           <img
-            className="mb-4"
+            className="mb-4 w-50"
             src={logo}
             alt="logo"
-            width="82"
-            height="82" />
+             />
           <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
           <p className="text-danger">  {error}</p>
           <div className="form-floating mb-3">

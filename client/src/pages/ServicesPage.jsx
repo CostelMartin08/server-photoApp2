@@ -66,14 +66,14 @@ const Services = () => {
                                 Alege să adaugi momente speciale precum fotografii la Starea Civilă,
                                 o ședință „Save the Date” sau un album premium.
                             </p>
-                            <h5 className='md-lp'>Opțiuni</h5>
+                            <h5 className='md-lp'>Opțiuni:</h5>
 
-                            <ul className={`text-font-contact  ul-set ${theme.mod.contrastText}`}>
-                                <li>Servicii video + 600€</li>
-                                <li>Fotografii la Starea Civilă + 150€</li>
-                                <li>Fotografii Ceremonie Botez + 150€</li>
-                                <li>Ședință foto "Save the Date" + 250€</li>
-                                <li>Album foto premium 20x25 cm, 15 file + 300€</li>
+                            <ul className={`text-font-contact list-unstyled  ul-set ${theme.mod.contrastText}`}>
+                                <li className='d-flex align-items-center gap-2'><span className="badge bg-transparent badge-secondary alt-color">•</span><span>Servicii video + 600€</span></li>
+                                <li className='d-flex align-items-center gap-2'><span className="badge bg-transparent badge-secondary alt-color">•</span><span>Fotografii la Starea Civilă + 150€</span></li>
+                                <li className='d-flex align-items-center gap-2'><span className="badge bg-transparent badge-secondary alt-color">•</span><span>Fotografii Ceremonie Botez + 150€</span></li>
+                                <li className='d-flex align-items-center gap-2'><span className="badge bg-transparent badge-secondary alt-color">•</span><span>Ședință foto "Save the Date" + 250€</span></li>
+                                <li className='d-flex align-items-center gap-2'><span className="badge bg-transparent badge-secondary alt-color">•</span><span>Album foto premium 20x25 cm, 15 file + 300€</span></li>
                             </ul>
                         </div>
 
