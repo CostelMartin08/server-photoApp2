@@ -81,8 +81,6 @@ app.post('/api/send-email', (req, res) => {
     const nume = req.body.nume;
     const email = req.body.email;
     const telefon = req.body.telefon;
-    const subiect = req.body.subiect;
-    const data = req.body.data;
     const mesaj = req.body.mesaj;
 
 
@@ -98,11 +96,9 @@ app.post('/api/send-email', (req, res) => {
 
     const mailOptions = {
         from: email,
-        to: 'andreib3100@gmail.com',
-        subject: `balanandrei.ro - ${subiect}`,
-        text: `  Hei Andrei! Domnul/Doamna ${nume} cu numarul de telefon ${telefon} e interesat/iteresata de serviciile tale.
-        Data solicitarii: ${data};
-        Subiect: ${subiect};
+        to: 'costelmartinescu2000@gmail.com',
+        subject: `ursu-ioan-fotograf.ro - Client`,
+        text: `  Hei Ioan! Domnul/Doamna ${nume} cu numarul de telefon ${telefon} e interesat/iteresata de serviciile tale.
         Mesaj: ${mesaj}`,
     };
 
