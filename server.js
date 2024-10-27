@@ -96,10 +96,10 @@ app.post('/api/send-email', (req, res) => {
 
     const mailOptions = {
         from: email,
-        to: 'costelmartinescu2000@gmail.com',
+        to: 'ursuioan33@yahoo.com',
         subject: `ursu-ioan-fotograf.ro - Client`,
         text: `  Hei Ioan! Domnul/Doamna ${nume} cu numarul de telefon ${telefon} e interesat/iteresata de serviciile tale.
-        Mesaj: ${mesaj}`,
+        Mesajul lăsat de către ${nume}: ${mesaj}`,
     };
 
     transporter.sendMail(mailOptions, (error) => {
