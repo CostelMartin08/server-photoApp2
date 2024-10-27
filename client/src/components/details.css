@@ -84,6 +84,7 @@
     }
 
     .banner-bg-diverse {
+        background-size: cover!important;
         background-size: 700px 500px;
         height: 350px;
     }

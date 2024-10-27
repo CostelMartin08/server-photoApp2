@@ -56,7 +56,7 @@ const Services = () => {
                             </div>
                             <div className='col-12 col-lg-6 relative'>
                                 <img className='photo-services' alt="poza-servicii" src={Photo} />
-                                <a className='services-button' href="tel:0749855707">CONTACTEAZĂ-MĂ PENTRU O OFERTĂ</a>
+                                <a className='services-button' href="tel:+447448525250">CONTACTEAZĂ-MĂ PENTRU O OFERTĂ</a>
                             </div>
 
                         </div>
