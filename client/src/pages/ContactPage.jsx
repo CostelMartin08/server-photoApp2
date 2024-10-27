@@ -6,11 +6,11 @@ import { urlBase } from "../scripts/url";
 import { useTheme } from "../scripts/useTheme";
 import './albumDetails.css';
 
-import LargePhoto from './backPhoto.png';
-import SmallPhoto from './photoSecond.png';
+import LargePhoto from './backPhoto.webp';
+import SmallPhoto from './photoSecond.webp';
 
-import LargePhotoW from './backPhotoWhite.png';
-import SmallPhotoW from './photoSecondWhite.png';
+import LargePhotoW from './backPhotoWhite.webp';
+import SmallPhotoW from './photoSecondWhite.webp';
 
 const ContactPage = () => {
 

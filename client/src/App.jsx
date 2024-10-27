@@ -75,20 +75,20 @@ const App = () => {
 
     <ThemeProvider>
       <Router>
-        <RouteChangeTracker />
-        <Routes>
-          <Route path='/login' element={<Login connection={login} />} />
-          <Route path='/register' element={<Register />} />
-          <Route path='/' element={<HomePage disconnection={logout} status={connection} loadingData={getData} sendData={data} />} />
-          <Route path='portofoliuFoto/:category/:title' element={<AlbumDetails loadingData={getData} sendData={data} />} />
-          <Route path='/controlPanel' element={connection ? (<ControlPanel status={connection} disconnection={logout} />) : (<PageNotFound />)} />
-          <Route path='portofoliuFoto/:category' element={<PhotoEvents loadingData={getData} sendData={data} status={connection} logout={logout} />} />
-          <Route path='/despreMine' element={<AboutPage />} />
-          <Route path='/servicii' element={<ServicesPage />} />
-          <Route path='/contact' element={<ContactPage />} />
-          <Route path='*' element={<PageNotFound />} />
-          <Route path='/notFound' element={<PageNotFound />} />
-        </Routes>
+          <RouteChangeTracker />
+          <Routes>
+            <Route path='/login' element={<Login connection={login} />} />
+            <Route path='/register' element={<Register />} />
+            <Route path='/' element={<HomePage disconnection={logout} status={connection} loadingData={getData} sendData={data} />} />
+            <Route path='portofoliuFoto/:category/:title' element={<AlbumDetails loadingData={getData} sendData={data} />} />
+            <Route path='/controlPanel' element={connection ? (<ControlPanel status={connection} disconnection={logout} />) : (<PageNotFound />)} />
+            <Route path='portofoliuFoto/:category' element={<PhotoEvents loadingData={getData} sendData={data} status={connection} logout={logout} />} />
+            <Route path='/despreMine' element={<AboutPage />} />
+            <Route path='/servicii' element={<ServicesPage />} />
+            <Route path='/contact' element={<ContactPage />} />
+            <Route path='*' element={<PageNotFound />} />
+            <Route path='/notFound' element={<PageNotFound />} />
+          </Routes>
       </Router>
 
     </ThemeProvider>

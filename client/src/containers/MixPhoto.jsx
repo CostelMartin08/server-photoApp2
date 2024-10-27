@@ -46,7 +46,7 @@ const MixPhoto = (props) => {
 
 
     return (
-        <section className={theme.bgB}>
+        <section className={`mod-gradi ${theme.bgB}`}>
             <div className="container d-flex flex-column align-items-left pt-3">
                 <h2 className={`title-font h3 ${theme.contrastText}`} >
                     Ce îți ofer eu ca fotograf
@@ -112,7 +112,7 @@ const MixPhoto = (props) => {
                             </div>
 
                             <div className="col-lg-6 g-3 text-center">
-                                <h2 className="text-md-left card-font ">Fotografie Portret</h2>
+                                <h2 className="text-md-left card-font ">Fotografie tip Portret</h2>
                                 <p className="text-md-left text-font-mix">
                                     Fotografia de portret este o artă care capturează nu doar trăsăturile fizice,
                                     ci și esența și personalitatea subiectului. Scopul meu este să creez imagini
@@ -145,7 +145,7 @@ const MixPhoto = (props) => {
                                 </Link>
                             </div>
                             <div className="col-lg-6 g-3 text-center">
-                                <h2 className="text-md-left card-font ">Foto Familie</h2>
+                                <h2 className="text-md-left card-font ">Fotografie de Familie</h2>
                                 <p className="text-md-left text-font-mix">
                                     Fotografia de familie înglobează esența legăturilor voastre,
                                     capturând momentele pline de bucurie și dragoste. Fiecare imagine

@@ -58,6 +58,12 @@
     transform: rotate(180deg);
 }
 
+.custom-set {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .navbar-toggler {
     color: transparent;
     border: none;
@@ -95,6 +101,10 @@
     box-shadow: transparent;
 }
 
+.custom-mod2 {
+    position: static;
+}
+
 @media only screen and (max-width: 992px) {
 
     .navbar-nav {
@@ -108,6 +118,15 @@
 
     .nav-link {
         font-size: 38px;
+    }
+
+    .custom-set {
+        position: static;
+        transform: none;
+    }
+
+    .custom-mod2 {
+        position: relative;
     }
 
 }
@@ -127,6 +146,11 @@
 /* -------------------------------------------------------------------------- */
 /*                                Mix Photo.jsx                               */
 /* -------------------------------------------------------------------------- */
+.bg-night.mod-gradi{
+   /*background: linear-gradient(to top, #282A29 19%, #3A5B30 36%, #282A29 80%);*/
+   background: linear-gradient(to top, #282A29, #4F545D, #282A29);
+
+}
 
 .cta {
     border: none;
