@@ -12,6 +12,8 @@ const AddNewPhoto = ({ data, refresh, theme }) => {
     const navigate = useNavigate();
     const [hidden, setHidden] = useState(false);
 
+    const [error, setError] = useState("");
+
     const handleFileChange = (event) => {
 
         const selectedFile = event.target.files[0];
@@ -46,6 +48,7 @@ const AddNewPhoto = ({ data, refresh, theme }) => {
             } else {
 
                 const responseData = await response.json();
+                setError(responseData.error);
                 console.error('Eroare:', responseData.error);
 
             }
@@ -67,7 +70,7 @@ const AddNewPhoto = ({ data, refresh, theme }) => {
                     method="post"
                     encType="multipart/form-data"
                     onSubmit={handleSubmit}>
-
+                    <p className='mb-0'>{!error ? "" : error}</p>
                     <div className='input-div cursor-pointer'>
 
                         <input
@@ -84,6 +87,7 @@ const AddNewPhoto = ({ data, refresh, theme }) => {
                         </svg>
 
                     </div>
+
                     {hidden ?
                         <button
 

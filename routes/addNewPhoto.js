@@ -11,6 +11,8 @@ const FotoFamilie = require("../schema/photo3Schema");
 const SedinteFoto = require("../schema/photo4Schema");
 const SaveDate = require("../schema/photo5Schema");
 
+const multer = require("multer");
+
 const checkAuthenticated = function (req, res, next) {
 
     const token = req.headers.authorization.split(' ')[1];
@@ -37,22 +39,22 @@ router.put("/:category/:title/:id", checkAuthenticated, (req, res, next) => {
     const category = req.params.category;
 
     switch (category) {
-            case 'nunti':
-                collection = Nunti;
-                break;
-            case 'portrete':
-                collection = Portrete;
-                break;
-            case 'fotografii-de-familie':
-                collection = FotoFamilie;
-                break;
-            case 'sedinte-foto':
-                collection = SedinteFoto;
-                break;
-            case 'save-the-date':
-                collection = SaveDate;
-                break;
-            default:
+        case 'nunti':
+            collection = Nunti;
+            break;
+        case 'portrete':
+            collection = Portrete;
+            break;
+        case 'fotografii-de-familie':
+            collection = FotoFamilie;
+            break;
+        case 'sedinte-foto':
+            collection = SedinteFoto;
+            break;
+        case 'save-the-date':
+            collection = SaveDate;
+            break;
+        default:
             res.status(404).send({ error: 'Categorie Invalida' });
             return;
     }
@@ -78,5 +80,15 @@ router.put("/:category/:title/:id", checkAuthenticated, (req, res, next) => {
 });
 
 
+router.use((err, req, res, next) => {
+    if (err instanceof multer.MulterError) {
+
+        return res.status(400).send({ error: err.message });
+    } else if (err) {
+
+        return res.status(400).send({ error: err.message });
+    }
+    next();
+});
 
 module.exports = router    

@@ -1,6 +1,6 @@
 const multer = require("multer");
-const path = require('path');
-const fs = require('fs');
+const path = require("path");
+const fs = require("fs");
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -27,7 +27,6 @@ const storage = multer.diskStorage({
         break;
     }
 
-
     if (!fs.existsSync(destinationPath)) {
       fs.mkdirSync(destinationPath, { recursive: true });
     }
@@ -39,5 +38,18 @@ const storage = multer.diskStorage({
   },
 });
 
-const upload = multer({ storage: storage });
+const upload = multer({
+  storage: storage,
+  fileFilter: function (req, file, cb) {
+    if (file.mimetype === 'image/webp') {
+      cb(null, true); 
+    } else {
+      cb(new Error("Tipul de fișier nu este acceptat. Sunt acceptate doar fișiere WebP."), false); 
+    }
+  },
+  limits: {
+    fileSize: 1 * 1024 * 1024 
+  }
+});
+
 module.exports = upload;
