@@ -93,6 +93,7 @@ router.delete('/:category/:id', checkAuthenticated, (req, res) => {
 
   let collection;
 
+
   switch (param) {
     case 'nunti':
       collection = Nunti;

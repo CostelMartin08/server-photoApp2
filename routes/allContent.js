@@ -4,8 +4,6 @@ const router = express.Router();
 const Nunti = require("../schema/photo1Schema");
 const Portrete = require("../schema/photo2Schema");
 const FotoFamilie = require("../schema/photo3Schema");
-const SedinteFoto = require("../schema/photo4Schema");
-const SaveDate = require("../schema/photo5Schema");
 
 
 router.get('/', (req, res) => {
@@ -14,13 +12,12 @@ router.get('/', (req, res) => {
         Nunti.find({}).exec(),
         Portrete.find({}).exec(),
         FotoFamilie.find({}).exec(),
-        SedinteFoto.find({}).exec(),
-        SaveDate.find({}).exec(),
+
     ])
 
-        .then(([nunti, portrete, fotoFamilie, sedinteFoto, saveDate]) => {
+        .then(([nunti, portrete, fotoFamilie]) => {
 
-            const collections = [nunti, portrete, fotoFamilie, sedinteFoto, saveDate];
+            const collections = [nunti, portrete, fotoFamilie];
 
             const iteration = collections
                 .filter(collection => collection.length > 0)
