@@ -87,7 +87,7 @@ const PhotoSet = ({ loading, setLoading, dataBrut, param, setSlideNumber, setOpe
                             </h3>
                             <p
                                 className="text-font">
-                                {dataBrut.description}
+                                {dataBrut.description === 'null' ? "" : dataBrut.description}
                             </p>
                         </div>
                     </div>
@@ -113,7 +113,7 @@ const PhotoSet = ({ loading, setLoading, dataBrut, param, setSlideNumber, setOpe
 
                                                     className='btn-delete-one btn btn-danger'><i className="fa-solid fa-trash"></i>
                                                 </button>
-                                                
+
                                                 : null}
 
                                             <img

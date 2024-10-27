@@ -1,8 +1,8 @@
 :root {
 
-    --font-title: 'Lexend', sans-serif;
-    --font-text: 'Lexend', sans-serif;
-    --font-card: 'Lexend', sans-serif;
+    --font-title: "Platypi", serif;
+    --font-text: "DM Sans", sans-serif;
+    --font-card: "DM Sans", sans-serif;
     --background-day:  #4E7132;
     --background-first:#4E7132;
     --background-day-body: #fff;

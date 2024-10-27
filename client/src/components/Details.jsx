@@ -14,7 +14,7 @@ const Details = (props) => {
                         <div className='m-3'>
                             <h2 className='mt-2 title-font text-light'>Despre mine</h2>
                             <hr className={`${theme.bg} pt-1 mx-1`}></hr>
-                            <p className='ms-3 text-font text-light'>
+                            <p className='text-font text-light'>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Curabitur porta risus quis felis ullamcorper posuere.
                                 Maecenas sit amet tempus est. Phasellus non accumsan turpis,

@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from "react";
 import { Link, useLocation  } from 'react-router-dom';
 import { urlBase } from "../scripts/url";
-import logoBG from '../components/photo/logo-ursu.png';
+import logoBG from '../components/photo/logoUrsuFooter.webp';
 import { routesBase } from "../scripts/routes";
 import SwitchButton from "../components/SwitchButton";
 import './header.css';
 
 const style = {
     imgW: {
-        width: '95px',
+        width: '105px',
     }
 }
 
@@ -68,7 +68,7 @@ const Header = (props) => {
 
             <div className="container ps-2 ">
 
-                <nav className="navbar navbar-expand-lg p-0">
+                <nav className="navbar navbar-expand-lg p-0 py-3">
                     <Link to={routesBase.home} className="d-flex align-items-center text-decoration-none">
                         <img
                             style={style.imgW}

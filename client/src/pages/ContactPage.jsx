@@ -9,6 +9,9 @@ import './albumDetails.css';
 import LargePhoto from './backPhoto.png';
 import SmallPhoto from './photoSecond.png';
 
+import LargePhotoW from './backPhotoWhite.png';
+import SmallPhotoW from './photoSecondWhite.png';
+
 const ContactPage = () => {
 
     const [formData, setFormData] = useState({
@@ -100,9 +103,14 @@ const ContactPage = () => {
                             <div className="col-lg-3 p-0 pt-4 lg:pt-0 relative text-center">
 
             
-                                <picture> 
+                                <picture className="dark-mode"> 
                                     <source media="(min-width: 992px)" srcSet={LargePhoto} />
                                     <source media="(max-width: 991px)" srcSet={SmallPhoto} />
+                                    <img className="photo-photo" src={SmallPhoto} alt="img" />
+                                </picture>
+                                <picture className="white-mod"> 
+                                    <source media="(min-width: 992px)" srcSet={LargePhotoW} />
+                                    <source media="(max-width: 991px)" srcSet={SmallPhotoW} />
                                     <img className="photo-photo" src={SmallPhoto} alt="img" />
                                 </picture>
 

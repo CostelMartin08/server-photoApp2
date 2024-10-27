@@ -101,7 +101,7 @@ const AlbumDetails = () => {
 
                         )}
 
-                        <div className="container-fluid">
+                        <div>
 
 
                             <PhotoSet

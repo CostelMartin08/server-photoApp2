@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import './details.css'
 import { routesBase } from "../scripts/routes";
 
+import Logo2 from "./photo/logoUrsuFooter.webp";
+
 const Footer = (props) => {
 
     const theme = props.theme.mod;
@@ -21,16 +23,16 @@ const Footer = (props) => {
                     <Link to={routesBase.home} className="text-decoration-none col-12 col-md-4  d-flex align-items-center justify-content-center flex-column flex-md-row justify-content-md-start ps-2">
                         <img
                             className="img-fluid"
-                            src={logo}
+                            src={Logo2}
                             alt="logo"
-                            width={"80px"}>
+                            width={"280px"}>
                         </img>
 
-                        <span
+                    {/*    <span
                             className="text-font text-light ms-md-1"
                         >Fotograf Ursu Ioan
                         </span>
-
+*/}
                     </Link>
                     <div className="col-12 col-md-4 d-flex justify-content-center align-items-center">
                         <ul className="text-center p-0 py-3 py-md-0 m-0">

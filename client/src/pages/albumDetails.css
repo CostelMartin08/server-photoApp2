@@ -38,10 +38,10 @@
   right: 0;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.967);
-  
+
 }
 
-.position-element{
+.position-element {
   position: relative;
   height: 100dvh;
   width: 99dvw;
@@ -263,44 +263,172 @@
   font-weight: 600;
 }
 
-.input-mode{
+.input-mode {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 
 @media only screen and (max-width: 992px) {
-  .input-mode{
+  .input-mode {
     flex-direction: column;
-    gap:0px;
+    gap: 0px;
   }
-.photo-photo{
-  width: 98%;
+
+  .photo-photo {
+    width: 98%;
+  }
 }
-}
+
 @media only screen and (max-width: 768px) {
-  .photo-photo{
+  .photo-photo {
     width: 96%;
   }
+
 }
+
 @media only screen and (max-width: 650px) {
-  .photo-photo{
+  .photo-photo {
     width: 94%;
   }
 }
+
 @media only screen and (max-width: 370px) {
-  .photo-photo{
+  .photo-photo {
     width: 90%;
   }
 }
+
 /* -------------------------------------------------------------------------- */
 /*                                   Contact                                  */
 /* -------------------------------------------------------------------------- */
-
-
+.white-mod{
+  display: none;
+}
+.bg-night .white-mod{
+  display: block;
+}
+.dark-mode{
+  display: block;
+}
+.bg-night .dark-mode{
+  display: none;
+}
 
 #date::-webkit-calendar-picker-indicator {
 
   filter: invert(50%);
   cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Servicii                                 */
+/* -------------------------------------------------------------------------- */
+.bg-night .card-services {
+  /*background-image: radial-gradient(at center left, #0e3456 0%, #45428e 100%);*/
+  background: linear-gradient(190deg, #282A29, #5E726F, #A5C1C0);
+
+}
+
+.card-services {
+  border: 1px solid rgb(239, 230, 250);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 10px 38px 0px rgba(84, 69, 84, 0.17);
+  max-width: 500px;
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+
+}
+
+.card-services p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p.title-mod {
+  font-weight: 700 !important;
+}
+
+.card-services span {
+  font-weight: 900;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+  font-size: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.photo-services {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-mod {
+  display: flex;
+
+}
+
+.services-button {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: max-content;
+  padding: 15px 30px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #ffffff;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #ffffff;
+}
+
+.services-button:hover {
+  text-decoration: none;
+  color: black;
+  box-shadow: inset 0 -100px 0 0 #ffffff;
+}
+
+.services-button:active {
+  transform: scale(0.9);
+}
+.md-lp{
+  font-family: var(--font-text);
+  font-size: 24px!important;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .services-button {
+    padding: 10px 10px;
+    font-size: 13px;
+  }
+
+  .ul-set {
+    font-size: 18px;
+  }
+
+  .card-services {
+    gap: 0px;
+  }
+
+  .card-services p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .card-services {
+    max-width: unset;
+    width: 100%;
+  }
 }

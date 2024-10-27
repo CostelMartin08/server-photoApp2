@@ -76,7 +76,7 @@ const MixPhoto = (props) => {
                             </div>
                             <div className="col-lg-6 g-3 text-center">
                                 <h2 className="text-md-left card-font ">Fotografie de Nuntă</h2>
-                                <p className="ms-md-2  text-font-mix text-md-left">
+                                <p className="text-font-mix text-md-left">
                                     Nunta este făra dar și poate unul din cele mai importante evenimente din viața de cuplu. Însăși însemnătatea și încărcătura emoțională
                                     din jurul acestei zile cer ca  fotograful să fie atent la detalii, dinamic și cu experiența. Îmi dau interesul și încerc să pun suflet
                                     în ceea ce fac, pentru ca povestea nunții voastre să fie spusă cât mai frumos și sincer.
@@ -106,7 +106,7 @@ const MixPhoto = (props) => {
 
                             <div className="col-lg-6 g-3 text-center">
                                 <h2 className="text-md-left card-font ">Fotografie Portret</h2>
-                                <p className="ms-md-2  text-md-left text-font-mix">
+                                <p className="text-md-left text-font-mix">
                                     Fiecare fotografie este o poveste în sine, în care emoțiile și fericirea din ziua botezului sunt imortalizate în imagini de o
                                     frumusețe uluitoare. De la priviri încântate la gesturi tandre și zâmbete nevinovate, aceste cadre prețioase surprind esența pură
                                     a acestui eveniment religios și familial.
@@ -135,7 +135,7 @@ const MixPhoto = (props) => {
                             </div>
                             <div className="col-lg-6 g-3 text-center">
                                 <h2 className="text-md-left card-font ">Foto Familie</h2>
-                                <p className="ms-md-2  text-md-left text-font-mix">
+                                <p className="text-md-left text-font-mix">
                                     Deoarece îmi place să încerc lucruri noi și să-mi pun spontaneitatea și creativitatea la treaba, surprind și diverse
                                     alte evenimente (majorate, petreceri private și nu numai), dar cochetez și cu fotografia de portret și cea culinară.
                                 </p>

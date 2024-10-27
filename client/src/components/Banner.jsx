@@ -1,7 +1,7 @@
 import React from "react";
 
-import Nunti from './photo/special-nunta.webp';
-import SavetheDate from './photo/special-save-the-date.webp';
+import Nunti from './photo/fotonunta.webp';
+import SavetheDate from './photo/fotosave.webp';
 
 import Portrete from './photo/portret.webp';
 import Familie from './photo/familie.webp';
@@ -42,7 +42,7 @@ const Banner = () => {
   else if (photo === 'save-the-date') {
     backgroundImage = SavetheDate;
     titleText = 'Save the Date';
-    classN="banner-bg-diverse";
+    classN="banner-bg-diverse bg-size-cover";
   }
 
 

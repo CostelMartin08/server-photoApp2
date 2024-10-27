@@ -7,7 +7,7 @@
 .title-font {
     font-family: var(--font-title);
     font-weight: 800;
-    font-size: 160%;
+    font-size: 32px;
 }
 
 .title-md-font {
@@ -22,20 +22,23 @@
 
 .text-font-creator-dark {
     font-family: var(--font-text);
-    font-size:small;
-    background-color:rgb(28 31 29);
+    font-size: small;
+    background-color: rgb(28 31 29);
     color: #FFFFFF;
 }
-.text-font-creator-light{
+
+.text-font-creator-light {
     font-family: var(--font-text);
-    font-size:small;
+    font-size: small;
     background-color: rgb(32, 40, 40);
     color: #FFFFFF;
-;}
+    ;
+}
+
 .text-font-contact {
     font-family: var(--font-text);
     font-weight: 400;
-    font-size: larger;
+    font-size: 16px;
 }
 
 .text-font-mix {
@@ -45,12 +48,15 @@
 
 .card-font {
     font-family: var(--font-card);
-    font-weight: 500;
+    font-size: 24px;
 }
 
 /* -------------------------------------------------------------------------- */
 /*                              Background colors                             */
 /* -------------------------------------------------------------------------- */
+.bg-size-cover {
+    background-size: cover !important;
+}
 
 .text-light {
     color: #FFFFFF !important;
@@ -62,6 +68,17 @@
     border-bottom: 3px solid white;
 
 }
+
+.bg-night a.dropdown-item:hover {
+    color: #FFFFFF !important;
+    opacity: 0.7 !important;
+}
+
+a.dropdown-item:hover {
+    color: #FFFFFF !important;
+    opacity: 0.7 !important;
+}
+
 /*fostul background-night*/
 .borderHeaderNight {
     border-bottom: 3px solid var(--background-night);
@@ -109,11 +126,18 @@ a {
     text-decoration: none;
 }
 
-@media only screen and (min-width: 470px) {
+@media only screen and (min-width: 992px) {
+
+    .text-font-contact{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
     .title-font {
         font-family: var(--font-title);
         font-weight: 800;
-        font-size: xx-large;
+        font-size: 24px;
     }
 
 }

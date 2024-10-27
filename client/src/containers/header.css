@@ -70,6 +70,8 @@
 }
 
 .nav-link {
+    font-size: 18px;
+    font-weight: 600;
     color: white !important;
 }
 
@@ -104,14 +106,24 @@
         font-size: 35px;
     }
 
+    .nav-link {
+        font-size: 38px;
+    }
+
 }
+
 @media only screen and (max-width: 568px) {
 
-.custom-ul li {
-   font-size: 25px;
-}
+    .nav-link {
+        font-size: 28px;
+    }
+
+    .custom-ul li {
+        font-size: 25px;
+    }
 
 }
+
 /* -------------------------------------------------------------------------- */
 /*                                Mix Photo.jsx                               */
 /* -------------------------------------------------------------------------- */
@@ -191,7 +203,7 @@
     text-align: center;
 }
 
-.text-size{
+.text-size {
     font-size: 13px;
 }
 
