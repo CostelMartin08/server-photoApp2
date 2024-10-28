@@ -1,5 +1,6 @@
 const multer = require("multer");
 const fs = require('fs');
+const path = require("path");
 
 const customStorage = (details) => {
     return multer.diskStorage({
