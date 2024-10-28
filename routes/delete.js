@@ -66,8 +66,24 @@ router.delete('/onePhoto', checkAuthenticated, async (req, res) => {
 
     res.status(200).send('Fotografie ștearsă!');
 
+    function transformCategory(value) {
+      switch (value) {
+        case "FotoFamilie":
+          return "fotografii-de-familie";
+        case "Portrete":
+          return "portrete";
+        case "Nunti":
+          return "nunti"
+        case "SaveDate":
+          return "save-the-date"
+        case "SedinteFoto":
+          return "sedinte-foto"
+        default:
+          return value;
+      }
+    }
 
-    const file = `./public/uploads/${collection.modelName}/${title}/${param}`;
+    const file = `./public/uploads/${transformCategory(collection.modelName)}/${title}/${param}`;
 
     fs.unlink(file, (err) => {
       if (err) {
