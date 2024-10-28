@@ -27,13 +27,9 @@ const checkAuthenticated = function (req, res, next) {
     });
 };
 
-
 router.put("/:category/:title/:id", checkAuthenticated, (req, res, next) => {
-
     uploadMiddleware({ title: req.params.title, category: req.params.category })(req, res, next);
-
 }, async (req, res) => {
-
 
     let collection;
     const category = req.params.category;
@@ -60,16 +56,16 @@ router.put("/:category/:title/:id", checkAuthenticated, (req, res, next) => {
     }
 
     try {
-
-        const uploadedFiles = req.file;
+        const uploadedFile = req.file; 
         const id = req.params.id;
-        let filtredData = uploadedFiles.originalname;
+
+      
+        let filtredData = uploadedFile.generatedName; 
 
         const filter = { _id: id };
-        const update = { $push: { content: filtredData } };
+        const update = { $push: { content: filtredData } }; 
 
         let upd = await collection.findOneAndUpdate(filter, update, { new: true });
-
 
         res.status(200).send('Datele au fost procesate cu succes.');
 
@@ -82,13 +78,11 @@ router.put("/:category/:title/:id", checkAuthenticated, (req, res, next) => {
 
 router.use((err, req, res, next) => {
     if (err instanceof multer.MulterError) {
-
         return res.status(400).send({ error: err.message });
     } else if (err) {
-
         return res.status(400).send({ error: err.message });
     }
     next();
 });
 
-module.exports = router    
+module.exports = router;

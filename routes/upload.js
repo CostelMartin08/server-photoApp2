@@ -170,16 +170,16 @@ router.post("/", checkAuthenticated, upload.fields([
 function getFilteredData(files) {
     const data = [];
     if (Array.isArray(files)) {
-        files.forEach((element) => data.push(element.originalname));
+        files.forEach((file) => data.push(file.generatedName)); 
     } else if (files) {
-        data.push(files.originalname);
+        data.push(files.generatedName); 
     }
     return data;
 }
 
 router.use((err, req, res, next) => {
     if (err instanceof multer.MulterError) {
-        // Erori specifice multer
+       
         return res.status(400).send({ error: err.message })
 
     } else if (err) {

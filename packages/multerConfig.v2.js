@@ -18,7 +18,10 @@ const customStorage = (details) => {
             const fileExtension = path.extname(file.originalname);
             const baseName = path.basename(file.originalname, fileExtension);
 
-            cb(null, baseName + '-' + uniqueSuffix + fileExtension);
+            const newFileName = `${baseName}-${uniqueSuffix}${fileExtension}`;
+            file.generatedName = newFileName; 
+
+            cb(null, newFileName);
         },
     });
 };
@@ -26,9 +29,8 @@ const customStorage = (details) => {
 const uploadMiddleware = (details) => {
     return multer({
         storage: customStorage(details),
-        limits: { fileSize: 1 * 1024 * 1024 }, //1MB PE FISIER
+        limits: { fileSize: 1 * 1024 * 1024 }, //1MB pe fișier
         fileFilter: function (req, file, cb) {
-
             if (file.mimetype === 'image/webp') {
                 cb(null, true);
             } else {

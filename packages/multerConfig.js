@@ -38,7 +38,10 @@ const storage = multer.diskStorage({
     const fileExtension = path.extname(file.originalname);
     const baseName = path.basename(file.originalname, fileExtension);
 
-    cb(null, baseName + '-' + uniqueSuffix + fileExtension);
+    const newFileName = `${baseName}-${uniqueSuffix}${fileExtension}`;
+    file.generatedName = newFileName; 
+
+    cb(null, newFileName);
   },
 });
 
