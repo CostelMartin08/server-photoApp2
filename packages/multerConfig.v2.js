@@ -13,7 +13,11 @@ const customStorage = (details) => {
             cb(null, destinationPath);
         },
         filename: function (req, file, cb) {
-            cb(null, `${file.originalname}`);
+            const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+            const fileExtension = path.extname(file.originalname);
+            const baseName = path.basename(file.originalname, fileExtension);
+
+            cb(null, baseName + '-' + uniqueSuffix + fileExtension);
         },
     });
 };
