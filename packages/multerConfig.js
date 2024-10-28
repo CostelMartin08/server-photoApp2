@@ -8,7 +8,7 @@ const storage = multer.diskStorage({
     const text = req.body.text;
 
     let destinationPath = "./public/uploads";
-    
+
     switch (category) {
       case 'nunti':
         destinationPath = path.join(destinationPath, "nunti", text);
@@ -34,7 +34,11 @@ const storage = multer.diskStorage({
     cb(null, destinationPath);
   },
   filename: function (req, file, cb) {
-    cb(null, file.originalname);
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+    const fileExtension = path.extname(file.originalname);
+    const baseName = path.basename(file.originalname, fileExtension);
+
+    cb(null, baseName + '-' + uniqueSuffix + fileExtension);
   },
 });
 
@@ -42,13 +46,13 @@ const upload = multer({
   storage: storage,
   fileFilter: function (req, file, cb) {
     if (file.mimetype === 'image/webp') {
-      cb(null, true); 
+      cb(null, true);
     } else {
-      cb(new Error("Tipul de fișier nu este acceptat. Sunt acceptate doar fișiere WebP."), false); 
+      cb(new Error("Tipul de fișier nu este acceptat. Sunt acceptate doar fișiere WebP."), false);
     }
   },
   limits: {
-    fileSize: 1 * 1024 * 1024 
+    fileSize: 1 * 1024 * 1024
   }
 });
 
