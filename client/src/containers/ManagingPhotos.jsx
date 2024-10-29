@@ -57,7 +57,7 @@ const PhotoSet = ({ loading, setLoading, dataBrut, param, setSlideNumber, setOpe
 
     }
 
-    const url = `${param[2]}/${dataBrut.title ? encodeURIComponent(dataBrut.title) : ''}/${dataBrut.content ? encodeURIComponent(dataBrut.content[0]) : ''}`;
+    const url = `${param[2]}/${dataBrut.title ? dataBrut.title : ''}/${dataBrut.content ? dataBrut.content[0] : ''}`;
     const existingURL = url || 'defaultURL';
     
 
