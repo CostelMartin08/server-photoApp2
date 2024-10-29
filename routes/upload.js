@@ -132,7 +132,7 @@ router.post("/", checkAuthenticated, upload.fields([
     { name: 'fotografii-de-familie', maxCount: 100 },
     { name: 'sedinte-foto', maxCount: 100 },
     { name: 'save-the-date', maxCount: 100 }
-]), (req, res) => {
+]), async (req, res) => { 
 
     const category = req.body.select;
     const fav = req.body.favorite;
@@ -148,6 +148,14 @@ router.post("/", checkAuthenticated, upload.fields([
     const filtredData = getFilteredData(req.files[category]);
 
     if (modelMap[category]) {
+        
+        const existingEntry = await modelMap[category].findOne({ title: req.body.text });
+
+        if (existingEntry) {
+          
+            return res.status(400).send({ error: 'Titlul există deja pentru această categorie.' });
+        }
+
         const newEntry = new modelMap[category]({
             content: filtredData,
             title: req.body.text,
@@ -156,16 +164,18 @@ router.post("/", checkAuthenticated, upload.fields([
             favorit: fav,
         });
 
-        newEntry.save()
-            .then(() => res.sendStatus(200))
-            .catch((error) => {
-                console.error(error);
-                res.sendStatus(500);
-            });
+        try {
+            await newEntry.save();
+            res.sendStatus(200);
+        } catch (error) {
+            console.error(error);
+            res.sendStatus(500);
+        }
     } else {
         res.status(404).send({ error: 'Categorie Invalida' });
     }
 });
+
 
 function getFilteredData(files) {
     const data = [];

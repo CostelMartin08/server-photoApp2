@@ -1,2 +1,2 @@
 
-export const urlBase = 'https://ursu-ioan-fotograf.ro/api';
+export const urlBase = 'http://ursu-ioan-fotograf.ro/api';
