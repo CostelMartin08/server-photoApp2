@@ -34,7 +34,7 @@ const Header = (props) => {
                 return response.json();
             })
             .then((data) => {
-                console.log(data.message);
+              //  console.log(data.message);
                 props.disconnection();
             })
             .catch((error) => {

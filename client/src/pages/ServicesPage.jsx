@@ -48,7 +48,6 @@ const Services = () => {
                                     <p>Pregătirea mirilor</p>
                                     <p>Ceremonie religioasă/umanistă</p>
                                     <p>Ședința foto cu mirii și invitații</p>
-                                    <p>Petrecere (până în ultimul moement sau ora 0:00)</p>
                                     <p>Aproximativ 800 de fotografii editate în stil propriu</p>
                                     <p>Livrare fotografii online în maxim 7 zile</p>
 

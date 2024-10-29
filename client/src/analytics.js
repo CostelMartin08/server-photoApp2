@@ -9,7 +9,7 @@ export const initializeGA = () => {
 
   ReactGA.initialize([
     {
-      trackingId: "G-EZETLQXW9Q",
+      trackingId: "G-5SLD5XP6G1",
      // gaOptions: { testMode: true }
     }
   ]);

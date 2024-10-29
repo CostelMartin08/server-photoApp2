@@ -46,7 +46,7 @@ const ContactPage = () => {
         })
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
+              //  console.log(data);
                 setClean(true);
                 setView(true);
             })
