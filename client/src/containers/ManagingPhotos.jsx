@@ -61,7 +61,7 @@ const PhotoSet = ({ loading, setLoading, dataBrut, param, setSlideNumber, setOpe
     const existingURL = url || 'defaultURL';
 
 
-    const encodedURL = `https://ursu-ioan-fotograf.ro/images/${encodeURIComponent(existingURL)}`;
+    const encodedURL = `https://ursu-ioan-fotograf.ro/images/${existingURL}`;
     console.log(encodedURL);
 
     return (
