@@ -2,37 +2,28 @@ import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { urlBase } from '../scripts/url';
 
-
 const AddNewPhoto = ({ data, refresh, theme }) => {
-
     const token = localStorage.getItem('token');
     const status = localStorage.getItem('status');
     const { category } = useParams();
-    const [file, setFile] = useState([]);
-    const navigate = useNavigate();
+    const [file, setFile] = useState(null);
     const [hidden, setHidden] = useState(false);
-
     const [error, setError] = useState("");
+    const navigate = useNavigate();
 
     const handleFileChange = (event) => {
-
         const selectedFile = event.target.files[0];
         setFile(selectedFile);
         setHidden(true);
     };
 
     const handleSubmit = async (e) => {
-
         e.preventDefault();
-
         const formData = new FormData();
-
-
         formData.append('file', file);
 
         try {
             const response = await fetch(`${urlBase}/addNew/${category}/${data.title}/${data._id}`, {
-
                 method: 'PUT',
                 headers: {
                     Authorization: `Bearer ${token}`,
@@ -43,28 +34,24 @@ const AddNewPhoto = ({ data, refresh, theme }) => {
 
             if (response.ok) {
                 setHidden(false);
-                refresh(true);
+                setFile(null); 
+                refresh(true); 
+                setError(""); 
 
             } else {
-
                 const responseData = await response.json();
                 setError(responseData.error);
                 console.error('Eroare:', responseData.error);
-
             }
         } catch (error) {
             console.error(error);
-            navigate('/login')
-
+            navigate('/login');
         }
-
-    }
-
-
+    };
 
     return (
         <>
-            {status ?
+            {status ? (
                 <form
                     className='d-flex justify-content-end align-items-center gap-3 mx-4 mb-3'
                     method="post"
@@ -72,12 +59,12 @@ const AddNewPhoto = ({ data, refresh, theme }) => {
                     onSubmit={handleSubmit}>
                     <p className='mb-0'>{!error ? "" : error}</p>
                     <div className='input-div cursor-pointer'>
-
                         <input
                             className='input cursor-pointer'
                             type='file'
                             name="file"
                             onChange={handleFileChange}
+                            key={file ? file.name : ''}
                         ></input>
                         <svg
                             className='icon'
@@ -85,19 +72,18 @@ const AddNewPhoto = ({ data, refresh, theme }) => {
                             <line x1="12" y1="5" x2="12" y2="19"></line>
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                         </svg>
-
                     </div>
 
-                    {hidden ?
+                    {hidden ? (
                         <button
-
                             className='btn-set btn btn btn-success px-3'
-                            type='submit'><i class="fa-solid fa-upload"></i>
-
-                        </button> : null}
-                </form> : null}
+                            type='submit'><i className="fa-solid fa-upload"></i>
+                        </button>
+                    ) : null}
+                </form>
+            ) : null}
         </>
-    )
-}
+    );
+};
 
 export default AddNewPhoto;
