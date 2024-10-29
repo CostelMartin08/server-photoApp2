@@ -59,10 +59,11 @@ const PhotoSet = ({ loading, setLoading, dataBrut, param, setSlideNumber, setOpe
 
     const url = `${param[2]}/${dataBrut.title ? encodeURIComponent(dataBrut.title) : ''}/${dataBrut.content ? encodeURIComponent(dataBrut.content[0]) : ''}`;
     const existingURL = url || 'defaultURL';
-    console.log(url);
-    console.log(existingURL);
-    console.log(`{https://ursu-ioan-fotograf.ro/images/${existingURL}}`);
-    
+
+
+    const encodedURL = `https://ursu-ioan-fotograf.ro/images/${encodeURIComponent(existingURL)}`;
+    console.log(encodedURL);
+
     return (
         <>
             {visibility ?
@@ -81,7 +82,8 @@ const PhotoSet = ({ loading, setLoading, dataBrut, param, setSlideNumber, setOpe
                     <div className="banner position-relative">
                         <div
                             className="bg-albumdetails"
-                            style={{ backgroundImage: `url(https://ursu-ioan-fotograf.ro/images/${existingURL})` }}>
+                            style={{ backgroundImage: `url("${encodedURL}")` }}
+                        >
                         </div>
                         <div className='bg-content'>
                             <h3
