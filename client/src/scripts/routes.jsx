@@ -1,9 +1,8 @@
 
-
+/*Add register la nevoie*/
 const routesBase = {
     home: '/',
     login: '/login',
-    register: 'register',
     controlPanel: '/controlPanel',
     despreMine: '/despreMine',
     contact: '/contact',
