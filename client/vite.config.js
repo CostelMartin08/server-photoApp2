@@ -19,7 +19,7 @@ export default defineConfig({
             type: 'image/png',
           },
           {
-            src: '/fav/icon2.png',
+            src: '/fav/android-chrome-384x384.png',
             sizes: '512x512',
             type: 'image/png',
           },
