@@ -1,6 +1,6 @@
 {
   "name": "Ursu Ioan Fotograf",
-  "short_name": "Portofoliu Ursu Ioan",
+  "short_name": "Portofoliu",
   "description": "Cele mai interesante colecții sunt aici!",
   "icons": [
     {
@@ -20,6 +20,16 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    },
+    {
+      "src": "https://ursu-ioan-fotograf.ro/icons/icon1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://ursu-ioan-fotograf.ro/icons/icon2.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "start_url": "https://ursu-ioan-fotograf.ro",
