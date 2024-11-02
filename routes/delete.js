@@ -106,8 +106,14 @@ router.delete('/onePhoto', checkAuthenticated, async (req, res) => {
 async function archiveFolder(folderPath) {
   const archivePath = path.join(path.dirname(folderPath), `arhiva_${path.basename(folderPath)}`);
   try {
-    fs.renameSync(folderPath, archivePath);
-    console.log(`Folderul evenimentului a fost redenumit pe disc: ${archivePath}`);
+    if (fs.existsSync(folderPath)) {
+      fs.renameSync(folderPath, archivePath);
+      console.log(`Folderul evenimentului a fost redenumit pe disc: ${archivePath}`);
+      return true;
+    } else {
+      console.log(`Folderul nu există: ${folderPath}`);
+      return false;
+    }
   } catch (error) {
     console.error('Eroare la redenumirea folderului:', error);
     throw error;
@@ -141,22 +147,25 @@ router.delete('/:category/:id', checkAuthenticated, async (req, res) => {
       return;
   }
 
-  const query = { _id: id };
+  const folderPath = `./public/uploads/${param}/${id}`;
   try {
-    const result = await collection.deleteOne(query);
-    if (result.deletedCount > 0) {
-      res.send({ message: 'Evenimentul a fost șters din DB!' });
+    const folderRenamed = await archiveFolder(folderPath);
 
-
-      const folderPath = `./public/uploads/${param}/${id}`;
-      await archiveFolder(folderPath);
-
+    if (folderRenamed) {
+   
+      const query = { _id: id };
+      const result = await collection.deleteOne(query);
+      if (result.deletedCount > 0) {
+        res.send({ message: 'Evenimentul a fost șters din DB și folderul redenumit pe disc!' });
+      } else {
+        res.status(404).send({ error: 'Evenimentul nu a fost găsit în DB!' });
+      }
     } else {
-      res.status(404).send({ error: 'Evenimentul nu a fost găsit în DB!' });
+      res.status(404).send({ error: 'Folderul evenimentului nu a fost găsit pe disc!' });
     }
   } catch (err) {
     console.error(err);
-    res.status(500).send({ error: 'Eroare la ștergere!' });
+    res.status(500).send({ error: 'Eroare la redenumirea folderului sau la ștergere!' });
   }
 });
 
