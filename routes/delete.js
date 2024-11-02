@@ -147,14 +147,22 @@ router.delete('/:category/:id', checkAuthenticated, async (req, res) => {
       return;
   }
 
-  const folderPath = `./public/uploads/${param}/${id}`;
   try {
+  
+    const event = await collection.findById(id);
+    if (!event) {
+      res.status(404).send({ error: 'Evenimentul nu a fost găsit în DB!' });
+      return;
+    }
+
+ 
+    const title = event.title;
+    const folderPath = `./public/uploads/${param}/${title}`;
     const folderRenamed = await archiveFolder(folderPath);
 
     if (folderRenamed) {
-   
-      const query = { _id: id };
-      const result = await collection.deleteOne(query);
+
+      const result = await collection.deleteOne({ _id: id });
       if (result.deletedCount > 0) {
         res.send({ message: 'Evenimentul a fost șters din DB și folderul redenumit pe disc!' });
       } else {
