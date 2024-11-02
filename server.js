@@ -69,12 +69,9 @@ app.use('/api/allContent', allContent);
 app.use('/api/delete', deleteRouter);
 app.use('/api/addNew', addNewPhoto);
 
-
 app.get('/api/user', (req, res) => {
     res.send(req.user);
 });
-
-
 
 app.post('/api/send-email', (req, res) => {
 

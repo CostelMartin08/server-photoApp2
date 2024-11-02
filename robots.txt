@@ -1,0 +1,5 @@
+User-agent: *
+disallow: /login
+disallow: /controlPanel
+
+sitemap: https://ursu-ioan-fotograf.ro/sitemap.xml
