@@ -28,6 +28,10 @@ export default defineConfig({
       workbox: {
         runtimeCaching: [
           {
+          urlPattern: /\/sitemap\.xml|\/site\.webmanifest$/,
+          handler: 'NetworkOnly', 
+          },
+          {
             urlPattern: ({ request }) => 
               request.destination === 'document' ||
               request.destination === 'script' ||
