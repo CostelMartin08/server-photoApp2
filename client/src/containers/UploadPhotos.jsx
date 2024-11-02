@@ -24,7 +24,8 @@ const UploadPhotos = (props) => {
                         type="text"
                         name="inputText"
                         id="textInput"
-                        placeholder="Introdu titlul" >
+                        placeholder="Introdu titlul" 
+                        required>
                     </input>
 
                     <textarea
