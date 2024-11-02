@@ -102,24 +102,24 @@ router.delete('/onePhoto', checkAuthenticated, async (req, res) => {
 
 });
 
+
 async function archiveFolder(folderPath) {
   const archivePath = path.join(path.dirname(folderPath), `arhiva_${path.basename(folderPath)}`);
   try {
     fs.renameSync(folderPath, archivePath);
-    console.log(`Folderul a fost redenumit: ${archivePath}`);
+    console.log(`Folderul evenimentului a fost redenumit pe disc: ${archivePath}`);
   } catch (error) {
     console.error('Eroare la redenumirea folderului:', error);
     throw error;
   }
 }
 
-// Ruta pentru a șterge un eveniment întreg pe baza categoriei și id-ului
 router.delete('/:category/:id', checkAuthenticated, async (req, res) => {
   const param = req.params.category;
   const id = req.params.id;
   let collection;
 
-  // Selectăm colecția corespunzătoare categoriei
+
   switch (param) {
     case 'nunti':
       collection = Nunti;
@@ -141,25 +141,23 @@ router.delete('/:category/:id', checkAuthenticated, async (req, res) => {
       return;
   }
 
-  // Ștergem documentul specificat din colecție
   const query = { _id: id };
   try {
     const result = await collection.deleteOne(query);
     if (result.deletedCount > 0) {
-      res.send({ message: 'Evenimentul a fost sters din DB!' });
+      res.send({ message: 'Evenimentul a fost șters din DB!' });
 
-      // Redenumim folderul asociat colecției
-      const folderPath = `./public/uploads/${param}`;
+
+      const folderPath = `./public/uploads/${param}/${id}`;
       await archiveFolder(folderPath);
 
-      // Redenumim colecția în baza de date
-      await archiveCollection(collection);
     } else {
-      res.status(404).send({ error: 'Evenimentul nu a fost gasit in DB!' });
+      res.status(404).send({ error: 'Evenimentul nu a fost găsit în DB!' });
     }
   } catch (err) {
     console.error(err);
     res.status(500).send({ error: 'Eroare la ștergere!' });
   }
 });
+
 module.exports = router;
