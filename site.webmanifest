@@ -10,24 +10,24 @@
       "purpose": "maskable"
     },
     {
-      "src": "https://ursu-ioan-fotograf.ro/icons/icon1.png",
+      "src": "https://ursu-ioan-fotograf.ro/icons/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://ursu-ioan-fotograf.ro/icons/android-chrome-384x384.png",
+      "src": "https://ursu-ioan-fotograf.ro/icons/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://ursu-ioan-fotograf.ro/icons/icon1.png",
+      "src": "https://ursu-ioan-fotograf.ro/icons/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://ursu-ioan-fotograf.ro/icons/android-chrome-384x384.png",
+      "src": "https://ursu-ioan-fotograf.ro/icons/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
@@ -35,7 +35,7 @@
   "start_url": "https://ursu-ioan-fotograf.ro",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "theme_color": "#ffffff",
   "orientation": "portrait",
   "scope": "/",
   "lang": "en-US",
