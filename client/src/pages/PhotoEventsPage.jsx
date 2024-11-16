@@ -77,7 +77,6 @@ const PhotoEvents = ({ loadingData, sendData, status }) => {
     <>
       <Helmet>
         <title>{`${capitalizeFirstLetter(category)} - Ursu Ioan Fotograf `}</title >
-        <meta property="og:image" content={`https://ursu-ioan-fotograf.ro/images/${category}/${sort[0].title}/${sort[0].content}`} />
         <meta name="keywords"
         content="fotograf, nunta, servicii, eveniment, save the date, portrete, foto, fotografii, diverse, ursu, ioan, ursu, ioan"></meta>
         <meta name="description" content='Transform pasiunea pentru fotografie în amintiri de neuitat. Specializat în portrete expresive și momente unice de nuntă, capturez emoții autentice și frumusețea fiecărui moment.' />
