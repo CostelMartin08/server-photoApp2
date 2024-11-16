@@ -76,6 +76,11 @@ const ContactPage = () => {
 
 
     return (
+        <>
+         <Helmet>
+                <title>Contact - Ursu Ioan Fotograf</title>
+                <meta name="description" content='Ia legătura cu mine pentru întrebări, rezervări sau colaborări. Completează formularul de contact, sună-mă sau trimite un e-mail. Sunt aici să te ajut!' />
+            </Helmet>
         <div className={theme.mod.bgB}>
             <Header
                 theme={theme}
@@ -200,6 +205,7 @@ const ContactPage = () => {
                 theme={theme}
             />
         </div>
+        </>
     );
 }
 

@@ -29,37 +29,45 @@ const HomePage = (props) => {
   }, []);
 
   return (
-    <section>
-      <Header
-        inverse="text-light bg-white"
-        fileMod=''
-        theme={theme}
-        set='set'
-        disconnection={props.disconnection}
-        status={props.status}
-      />
+    <>
 
-      {windowWidth > 600 ?
-        <Carusel
+      <Helmet>
+        <title>Fotograf profesionist - Ursu Ioan</title>
+        <meta name="description" content='Pasiunea mea pentru fotografie transformă momente simple în amintiri de neuitat. Capturez emoții autentice și momente unice pentru a le reda valoarea și frumusețea prin imagini.' />
+      </Helmet>
+
+      <section>
+        <Header
+          inverse="text-light bg-white"
+          fileMod=''
           theme={theme}
-        /> :
-        <CaruselMobile
+          set='set'
+          disconnection={props.disconnection}
+          status={props.status}
+        />
+
+        {windowWidth > 600 ?
+          <Carusel
+            theme={theme}
+          /> :
+          <CaruselMobile
+            theme={theme}
+          />
+        }
+        <Details
           theme={theme}
         />
-      }
-      <Details
-        theme={theme}
-      />
-      <MixPhoto
-        theme={theme}
-        loadingData={props.loadingData}
-        sendData={props.sendData}
-      />
-      <Footer
-        theme={theme}
-      />
+        <MixPhoto
+          theme={theme}
+          loadingData={props.loadingData}
+          sendData={props.sendData}
+        />
+        <Footer
+          theme={theme}
+        />
 
-    </section >
+      </section >
+    </>
   )
 }
 

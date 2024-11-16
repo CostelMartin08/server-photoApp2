@@ -3,6 +3,8 @@ import Header from '../containers/Header';
 import Footer from '../components/Footer';
 import { useTheme } from "../scripts/useTheme";
 
+import { Helmet } from 'react-helmet-async';
+
 import Photo from "../components/photo/fotonunta.webp";
 
 import './albumDetails.css';
@@ -14,6 +16,11 @@ const Services = () => {
 
     return (
         <>
+
+            <Helmet>
+                <title>Servicii - Ursu Ioan Fotograf</title>
+                <meta name="description" content='Capturez momente memorabile cu fotografii profesionale și creative. Specializat în fotografie de nuntă, portrete, evenimente și peisaje. Rezervă acum și transformă-ți amintirile în artă!' />
+            </Helmet>
 
             <div className={theme.mod.bgB}>
 

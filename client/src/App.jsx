@@ -16,6 +16,8 @@ import PageNotFound from "./pages/NotFoundPage";
 
 import { logPageView } from './analytics';
 
+import { HelmetProvider } from 'react-helmet-async';
+
 const RouteChangeTracker = () => {
 
   const location = useLocation();
@@ -72,9 +74,9 @@ const App = () => {
   };
 
   return (
-
-    <ThemeProvider>
-      <Router>
+    <HelmetProvider>
+      <ThemeProvider>
+        <Router>
           <RouteChangeTracker />
           <Routes>
             <Route path='/login' element={<Login connection={login} />} />
@@ -88,9 +90,10 @@ const App = () => {
             <Route path='*' element={<PageNotFound />} />
             <Route path='/notFound' element={<PageNotFound />} />
           </Routes>
-      </Router>
+        </Router>
 
-    </ThemeProvider>
+      </ThemeProvider>
+    </HelmetProvider>
 
   );
 }
