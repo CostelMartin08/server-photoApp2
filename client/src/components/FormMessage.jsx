@@ -18,7 +18,7 @@ const FormMessage = () => {
     return (
         <div style={style.textBox}>
             <div>
-                <h4>Formularul a fost trimis!  <i class="ms-2 text-success fa-solid fa-check fa-xl"></i></h4>
+                <h4>Formularul a fost trimis!  <i className="ms-2 text-success fa-solid fa-check fa-xl"></i></h4>
                 <p>Iti multumesc pentru interesul acordat </p>
                 <Link
                     to={routesBase.home}

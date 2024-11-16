@@ -12,6 +12,8 @@ import SmallPhoto from './photoSecond.webp';
 import LargePhotoW from './backPhotoWhite.webp';
 import SmallPhotoW from './photoSecondWhite.webp';
 
+import { Helmet } from 'react-helmet-async';
+
 const ContactPage = () => {
 
     const [formData, setFormData] = useState({

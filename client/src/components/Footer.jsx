@@ -70,7 +70,7 @@ const Footer = (props) => {
                                     href="https://wa.me/447448525250"
                                     target="_blank"
                                     rel="noopener noreferrer">
-                                    <i class="fa-brands fa-whatsapp fa-xl"></i>
+                                    <i className="fa-brands fa-whatsapp fa-xl"></i>
                                 </a>
 
 

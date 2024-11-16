@@ -96,5 +96,18 @@
     <priority>0.7</priority>
 </url>
 
+<url>
+    <loc>https://ursu-ioan-fotograf.ro/portofoliuFoto/nunti/Andrei&amp;Daniela</loc>
+    <lastmod>2024-11-16T08:14:19+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://ursu-ioan-fotograf.ro/portofoliuFoto/portrete/Portret</loc>
+    <lastmod>2024-11-16T08:14:19+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+</url>
 
 </urlset>

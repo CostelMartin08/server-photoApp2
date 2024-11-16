@@ -8,6 +8,7 @@ import MixPhoto from "../containers/MixPhoto";
 import Footer from "../components/Footer";
 import './pages.css';
 
+import { Helmet } from 'react-helmet-async';
 
 const HomePage = (props) => {
 
