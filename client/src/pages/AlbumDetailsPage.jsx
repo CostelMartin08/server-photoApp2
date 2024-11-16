@@ -11,7 +11,7 @@ import { useTheme } from '../scripts/useTheme';
 import PhotoSet from '../containers/ManagingPhotos';
 import ScrollPhotos from '../containers/ScrollPhotos';
 
-
+import { Helmet } from 'react-helmet-async';
 
 const AlbumDetails = () => {
 
@@ -72,71 +72,89 @@ const AlbumDetails = () => {
     }, [paramS, title, value]);
 
 
+    function capitalizeFirstLetter(paramS) {
+        if (typeof paramS !== 'string' || paramS.length === 0) {
+            return paramS;
+        }
+    
+        paramS = paramS.replace(/-/g, ' ');
+    
+        return paramS
+            .split(' ')  
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1)) 
+            .join(' ');
+    }
+    
     return (
+        <>
+            <Helmet>
+                <title>{`${capitalizeFirstLetter(paramS)} - ${title}`}</title>
+                <meta name="description" content='Transform pasiunea pentru fotografie în amintiri de neuitat. Specializat în portrete expresive și momente unice de nuntă, capturez emoții autentice și frumusețea fiecărui moment.' />
+            </Helmet>
+            <section
+                className={theme.mod.bgB}>
 
-        <section
-            className={theme.mod.bgB}>
+                <Header
+                    theme={theme}
+                    fileMod={theme.mod.bgHeader}
+                />
 
-            <Header
-                theme={theme}
-                fileMod={theme.mod.bgHeader}
-            />
+                <main
+                    className={`${theme.mod.bgB}`}>
 
-            <main
-                className={`${theme.mod.bgB}`}>
+                    {data && dataBrut ? (
 
-                {data && dataBrut ? (
+                        <>
 
-                    <>
+                            {openModal && (
 
-                        {openModal && (
+                                <ScrollPhotos
+                                    dataBrut={dataBrut}
+                                    setSlideNumber={setSlideNumber}
+                                    slideNumber={slideNumber}
+                                    setOpenModal={setOpenModal}
+                                    param={param}
+                                />
 
-                            <ScrollPhotos
-                                dataBrut={dataBrut}
-                                setSlideNumber={setSlideNumber}
-                                slideNumber={slideNumber}
-                                setOpenModal={setOpenModal}
-                                param={param}
-                            />
+                            )}
 
-                        )}
-
-                        <div>
-
-
-                            <PhotoSet
-
-                                loading={loading}
-                                setLoading={setLoading}
-                                dataBrut={dataBrut}
-                                param={param}
-                                setSlideNumber={setSlideNumber}
-                                setOpenModal={setOpenModal}
-                                refresh={setValue}
+                            <div>
 
 
-                            />
+                                <PhotoSet
 
-                            <AddNewPhoto
-                                theme={theme}
-                                data={dataBrut}
-                                refresh={setValue}
-                            />
+                                    loading={loading}
+                                    setLoading={setLoading}
+                                    dataBrut={dataBrut}
+                                    param={param}
+                                    setSlideNumber={setSlideNumber}
+                                    setOpenModal={setOpenModal}
+                                    refresh={setValue}
 
-                        </div>
 
-                    </>
+                                />
 
-                ) :
-                    <Loaders />
-                }
-            </main>
+                                <AddNewPhoto
+                                    theme={theme}
+                                    data={dataBrut}
+                                    refresh={setValue}
+                                />
 
-            <Footer
-                theme={theme}
-            />
+                            </div>
 
-        </section >
+                        </>
+
+                    ) :
+                        <Loaders />
+                    }
+                </main>
+
+                <Footer
+                    theme={theme}
+                />
+
+            </section >
+        </>
     );
 }
 
